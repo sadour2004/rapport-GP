@@ -1319,7 +1319,185 @@ xychart-beta
 
 **Ouverture.** Au-delà de l'événement 2030, ReadyToGo peut s'inscrire durablement dans l'écosystème de mobilité de Tanger, à condition de démontrer, données à l'appui, son utilité, sa soutenabilité et son bénéfice environnemental réel. La leçon centrale de ce projet reste que **la réussite ne tient pas à l'absence de problèmes, mais à la capacité de l'équipe à les détecter, décider et corriger**.
 
-<!-- END -->
+---
+
+# 15. Bibliographie
+
+> **Règle appliquée :** aucune source n'est inventée. Les références méthodologiques ci-dessous sont des ouvrages/normes **réels et vérifiables**. Les éléments propres à Tanger et à 2030 sont signalés comme **données à vérifier auprès des sources officielles** (aucune convention ni autorisation n'est présentée comme acquise).
+
+### 15.1 Références méthodologiques (gestion de projet) — vérifiables
+
+1. **Project Management Institute (PMI).** *A Guide to the Project Management Body of Knowledge (PMBOK® Guide)*, 7ᵉ édition, 2021. — Fondements (parties prenantes, planification, valeur acquise, risques).
+2. **ISO 21502:2020**, *Management de projet, de programme et de portefeuille — Lignes directrices sur le management de projet*. — Processus et gouvernance.
+3. **ISO 31000:2018**, *Management du risque — Lignes directrices*. — Méthode d'analyse des risques (§5).
+4. **AXELOS.** *Managing Successful Projects with PRINCE2*, 2017. — Jalons, produits, contrôle par étapes.
+5. **PMI.** *Practice Standard for Earned Value Management*, 2ᵉ édition. — Formules et interprétation EVM (§8.2).
+6. **Schwaber K., Sutherland J.** *The Scrum Guide*, 2020. — Sprints et burndown (§8.3).
+
+### 15.2 Références sur la micromobilité — vérifiables
+
+7. **OECD/ITF (International Transport Forum).** *Safe Micromobility*, 2020. — Sécurité et intégration urbaine des trottinettes.
+8. **ITDP (Institute for Transportation and Development Policy).** Publications sur la micromobilité partagée et le stationnement. — Bonnes pratiques d'exploitation.
+
+### 15.3 Sources à consulter / données à vérifier (non acquises)
+
+> 🟠 **À vérifier — ne pas citer comme acquis.** Les éléments suivants doivent être confirmés auprès des sources officielles avant toute décision ; ils sont utilisés dans ce rapport comme **hypothèses de travail**.
+
+9. **Commune / Mairie de Tanger** — règles d'occupation du domaine public, zones autorisées. *(Source officielle à consulter ; date de consultation : __/__/____.)*
+10. **FRMF / instances Coupe du Monde 2030** — calendrier et exigences liées aux sites. *(À consulter ; date : __/__/____.)*
+11. **Fabricants de trottinettes et de bornes** — fiches techniques et prix unitaires. *(Devis à obtenir ; date : __/__/____.)*
+12. **Sources réglementaires marocaines** (circulation, protection des données) — cadre applicable. *(À vérifier ; date : __/__/____.)*
+
+> *Interprétation :* les données de marché (prix des modes concurrents, coûts unitaires, fréquentation) mobilisées dans ce rapport sont des **estimations** ou des **hypothèses de travail à valider** par relevés terrain et devis. Elles sont clairement distinguées des références méthodologiques vérifiables.
+
+---
+
+# 16. Annexes
+
+> La plupart des artefacts demandés figurent **dans le corps du rapport** ; les annexes ci-dessous les recensent et ajoutent les documents complémentaires (charte, organigramme, formulaires, glossaire).
+
+| Annexe | Contenu | Emplacement |
+|---|---|---|
+| A1 | Charte du projet | Annexe A1 (ci-dessous) |
+| A2 | WBS | §3.2 |
+| A3 | Planning détaillé | §3.3 |
+| A4 | Diagrammes de Gantt | §3.4 |
+| A5 | Jalons | §3.5 |
+| A6 | Organigramme | Annexe A6 (ci-dessous) |
+| A7 | Matrice RACI | §4.5 |
+| A8 | Répartition des tâches (5 membres) | §4.3 |
+| A9 | Contribution individuelle | §4.7 |
+| A10 | Plan de charge | §4.6 |
+| A11 | Registre des risques | §5.2 |
+| A12 | Matrice probabilité-impact | §5.3 |
+| A13 | Plan de communication | §6.2 |
+| A14 | Matrice de communication | §6.3 |
+| A15 | Tableau de bord KPI | §8.1 |
+| A16 | Simulation EVM | §8.2 |
+| A17 | Burndown | §8.3 |
+| A18 | Budget détaillé (3 scénarios) | §10.1 |
+| A19 | Checklist de livraison | §9.1 |
+| A20 | Procès-verbal de recette | §9.2 |
+| A21 | Formulaire d'incident | Annexe A21 (ci-dessous) |
+| A22 | Demande de changement | §8.4 |
+| A23 | Glossaire | Liste des sigles + Annexe A23 |
+| A24 | Journal des problèmes | §7.1 |
+
+## Annexe A1 — Charte du projet (synthèse)
+
+| Rubrique | Contenu |
+|---|---|
+| **Projet** | ReadyToGo — service pilote de trottinettes électriques, Tanger |
+| **Justification** | Améliorer la mobilité sur les trajets courts ; préparer 2030 |
+| **Objectif général** | Déployer un pilote (150 tr., 12 bornes) d'ici le 01/10/2026, budget 2,0 M DH ± 10 %, disponibilité ≥ 90 % |
+| **Périmètre** | Corniche + centre-ville (voir §2.4) |
+| **Jalons clés** | Autorisations, flotte livrée, fin des tests, lancement, recette (voir §3.5) |
+| **Budget de référence** | 2,0 M DH (base) + réserve 8 % |
+| **Gouvernance** | Sponsor, chef de projet (M1), comité de pilotage, 5 membres (voir §2.7) |
+| **Risques majeurs** | Autorisations (R04), cybersécurité (R09), coûts (R17), adoption (R14) |
+| **Critères de réussite** | Délai, budget ± 10 %, disponibilité ≥ 90 %, satisfaction ≥ 4/5, zéro incident grave |
+
+## Annexe A6 — Organigramme projet
+
+```mermaid
+flowchart TB
+    SP["Sponsor (envisagé)"]
+    CP["Comité de pilotage"]
+    M1["Membre 1 — Chef de projet"]
+    M2["Membre 2 — Technique & application"]
+    M3["Membre 3 — Opérations & flotte"]
+    M4["Membre 4 — Finances, achats & risques"]
+    M5["Membre 5 — Communication & parties prenantes"]
+    EXT["Prestataires externes<br/>(dev, fournisseurs, paiement)"]
+    SP --> CP
+    CP --> M1
+    M1 --> M2
+    M1 --> M3
+    M1 --> M4
+    M1 --> M5
+    M2 -.supervise.-> EXT
+    M3 -.supervise.-> EXT
+    M4 -.supervise.-> EXT
+```
+
+> *Interprétation :* structure fonctionnelle simple : le chef de projet coordonne les quatre responsables de domaine ; les prestataires externes sont toujours supervisés par un membre.
+
+## Annexe A21 — Formulaire d'incident (modèle)
+
+| Champ | Valeur |
+|---|---|
+| Référence | INC-____ |
+| Date / heure | __/__/____ — __:__ |
+| Lieu | ____ |
+| Type | ☐ Accident ☐ Panne ☐ Vandalisme ☐ Cybersécurité ☐ Autre |
+| Description | ____ |
+| Personnes concernées | ____ |
+| Gravité | ☐ Mineure ☐ Modérée ☐ Grave |
+| Actions immédiates | ____ |
+| Responsable du suivi | ____ |
+| Mesures correctives | ____ |
+| Statut | ☐ Ouvert ☐ En cours ☐ Clos |
+
+## Annexe A23 — Glossaire (compléments)
+
+| Terme | Définition |
+|---|---|
+| **Géofencing** | Délimitation virtuelle de zones où la trottinette peut circuler/stationner. |
+| **Micromobilité** | Modes de déplacement légers pour trajets courts (trottinettes, vélos partagés). |
+| **MVP** | Version minimale d'un produit livrant l'essentiel de la valeur, à enrichir ensuite. |
+| **Point mort** | Niveau d'activité où les recettes couvrent exactement les coûts. |
+| **Report modal** | Transfert d'usagers d'un mode de transport vers un autre. |
+| **Réserve pour risques** | Provision budgétaire destinée à financer les aléas identifiés. |
+| **SLA** | Engagement contractuel de niveau de service (délai, qualité, disponibilité). |
+
+*(Voir aussi la liste des sigles et abréviations en début de rapport.)*
+
+---
+
+# 17. Contrôle final
+
+Vérification systématique des exigences du cahier des charges :
+
+| # | Point de contrôle | Statut | Emplacement |
+|---|---|:--:|---|
+| 1 | L'ancien nom à supprimer n'apparaît nulle part | ✅ | Vérifié (recherche automatisée) |
+| 2 | « ReadyToGo » utilisé partout | ✅ | Ensemble du document |
+| 3 | Les 7 étapes sont présentes | ✅ | §2 à §9 |
+| 4 | Objectifs SMART | ✅ | §2.3 |
+| 5 | Livrables avec critères d'acceptation | ✅ | §2.5, §9.1 |
+| 6 | Parties prenantes identifiées | ✅ | §2.6 |
+| 7 | Planning (tâches, durées, séquences, responsables) | ✅ | §3.3 |
+| 8 | Gantt cohérent avec le planning | ✅ | §3.4 |
+| 9 | Jalons présents | ✅ | §3.5 |
+| 10 | Toutes les tâches réparties entre les 5 membres | ✅ | §4.3, §4.5 |
+| 11 | Contributions = 100 % (≈ 20 %/pers.) | ✅ | §4.7 |
+| 12 | Charge équilibrée, surcharges analysées | ✅ | §4.6 |
+| 13 | Matrice RACI cohérente (un seul « A »/tâche) | ✅ | §4.5 |
+| 14 | Risques avec probabilité, impact, réponse | ✅ | §5.2 |
+| 15 | Plan de communication (canaux, messages, supports) | ✅ | §6.2 |
+| 16 | Matrice de communication complète | ✅ | §6.3 |
+| 17 | 5 KPI principaux | ✅ | §8.1 |
+| 18 | EVM : calculs, courbe, interprétation | ✅ | §8.2 |
+| 19 | Livrables vérifiés | ✅ | §9.1 |
+| 20 | Processus de validation et de transfert expliqué | ✅ | §9.2, §9.3 |
+| 21 | RETEX signalés comme simulés | ✅ | §9.4, §7 |
+| 22 | Budget cohérent (3 scénarios, comparaison) | ✅ | §10.1 |
+| 23 | Hypothèses identifiées | ✅ | Encadrés 🟠 |
+| 24 | Sources non inventées | ✅ | §15 |
+| 25 | Dates, coûts, responsabilités cohérents | ✅ | Vérifié (BAC 2,0 M ↔ EVM ↔ budget) |
+| 26 | Chaque tableau/graphique suivi d'une interprétation | ✅ | Ensemble du document |
+| 27 | Simulation des problèmes impactant Gantt/budget/EVM | ✅ | §7 + §3.4, §8.2 |
+
+> **Conclusion du contrôle :** l'ensemble des exigences est satisfait. Les éléments non figés (noms des membres, établissement, filière, enseignant, date de remise) sont explicitement marqués « *[À compléter]* » et les données non vérifiées « *Hypothèse de travail à valider* ».
+
+---
+
+<div align="center">
+
+*ReadyToGo — Rapport de projet · Module « Gestion de projets » · 2025-2026*
+
+</div>
+
 
 
 
