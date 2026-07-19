@@ -29,31 +29,24 @@
 | **Nom du projet** | ReadyToGo |
 | **Module** | Gestion de projets |
 | **Ville** | Tanger, Maroc |
-| **Établissement** | *[À compléter]* |
-| **Filière** | *[À compléter]* |
-| **Enseignant** | *[À compléter]* |
+| **Enseignant** | Soukaina EL HAJJAJI |
 | **Année universitaire** | 2025-2026 |
-| **Date de remise** | *[À compléter]* |
 
-**Équipe projet (5 membres) :**
+**Équipe projet :**
 
 | Rôle | Membre |
 |---|---|
-| Membre 1 — Chef de projet & coordination | *[Nom et prénom à compléter]* |
-| Membre 2 — Responsable technique & application | *[Nom et prénom à compléter]* |
-| Membre 3 — Responsable opérations, flotte & logistique | *[Nom et prénom à compléter]* |
-| Membre 4 — Responsable finances, achats & risques | *[Nom et prénom à compléter]* |
-| Membre 5 — Responsable communication & parties prenantes | *[Nom et prénom à compléter]* |
-
-> **En-tête recommandé pour l'export Word/PDF :** « ReadyToGo — Rapport de projet » · pieds de page avec numérotation. Charte : orange, bleu détroit, blanc, gris clair.
+| Chef de projet & coordination | Iliass Benabdellah |
+| Responsable technique & application | Ilyas Sadour |
+| Responsable opérations, flotte & logistique | Jabir Fkihi El Haoudi |
+| Responsable finances, achats & risques | CHETOUANI Adil |
+| Responsable communication & parties prenantes | PIERRE Hordona |
 
 ---
 
 ## Remerciements
 
-Nous adressons nos remerciements à notre enseignant du module « Gestion de projets » pour son encadrement méthodologique, ainsi qu'à l'ensemble des personnes qui ont accepté d'échanger avec nous sur les enjeux de mobilité urbaine à Tanger. Nous remercions également notre établissement pour la mise à disposition des ressources documentaires ayant permis de mener à bien ce travail collectif.
-
-> *Section facultative — à personnaliser par l'équipe.*
+Nous adressons nos remerciements à notre enseignante du module « Gestion de projets », **Soukaina EL HAJJAJI**, pour son encadrement méthodologique, ainsi qu'à l'ensemble des personnes qui ont accepté d'échanger avec nous sur les enjeux de mobilité urbaine à Tanger. Nous remercions également notre établissement pour la mise à disposition des ressources documentaires ayant permis de mener à bien ce travail collectif.
 
 ---
 
@@ -131,7 +124,7 @@ Fait distinctif de ce rapport, le **déroulement réel du projet et la gestion d
    - 3.3 Planning détaillé
    - 3.4 Diagrammes de Gantt (global 2026-2030 + pilote) & chemin critique
    - 3.5 Jalons
-4. **Organisation du travail (5 personnes)**
+4. **Organisation du travail**
    - 4.1 Rôles des membres
    - 4.2 Règles de répartition
    - 4.3 Tableau de répartition
@@ -182,7 +175,7 @@ Deux partis pris méthodologiques structurent l'ensemble : (i) une **distinction
 
 ---
 
-# 2. Définition du projet *(Étape 1)*
+# 2. Définition du projet
 
 ## 2.1 Présentation de ReadyToGo
 
@@ -425,7 +418,7 @@ Les parties prenantes sont classées selon deux axes — **pouvoir** (capacité 
 
 ---
 
-# 3. Planification globale *(Étape 2)*
+# 3. Planification globale
 
 ## 3.1 Méthode de gestion (hybride)
 
@@ -605,7 +598,7 @@ gantt
 
 ---
 
-# 4. Organisation du travail (5 personnes) *(Étape 3)*
+# 4. Organisation du travail
 
 Le groupe est composé **exactement de cinq membres**. Toutes les tâches du projet et toutes les parties du rapport sont réparties entre eux, avec une charge équilibrée (contributions proches de 20 % par personne, total 100 %).
 
@@ -735,7 +728,7 @@ xychart-beta
 
 ---
 
-# 5. Gestion des risques *(Étape 4)*
+# 5. Gestion des risques
 
 ## 5.1 Méthode
 
@@ -812,7 +805,7 @@ Les quatre stratégies employées sont **Éviter, Réduire, Transférer, Accepte
 
 ---
 
-# 6. Plan de communication *(Étape 5)*
+# 6. Plan de communication
 
 ## 6.1 Objectifs de communication
 
@@ -953,7 +946,7 @@ Les aléas rencontrés **modifient réellement** les autres parties du rapport :
 
 ---
 
-# 8. Suivi et indicateurs *(Étape 6)*
+# 8. Suivi et indicateurs
 
 ## 8.1 KPI
 
@@ -1051,7 +1044,7 @@ Toute modification de périmètre, coût ou délai suit un **processus formel** 
 
 ---
 
-# 9. Livraison du projet *(Étape 7)*
+# 9. Livraison du projet
 
 ## 9.1 Vérification des livrables
 
@@ -1480,7 +1473,7 @@ Vérification systématique des exigences du cahier des charges :
 | 26 | Chaque tableau/graphique suivi d'une interprétation | ✅ | Ensemble du document |
 | 27 | Aléas d'exécution impactant Gantt/budget/EVM | ✅ | §7 + §3.4, §8.2 |
 
-> **Conclusion du contrôle :** l'ensemble des exigences est satisfait. Les éléments non figés (noms des membres, établissement, filière, enseignant, date de remise) sont explicitement marqués « *[À compléter]* » et les données non vérifiées « *Hypothèse de travail à valider* ».
+> **Conclusion du contrôle :** l'ensemble des exigences est satisfait. Les données non vérifiées restent signalées « *Hypothèse de travail à valider* ».
 
 ---
 
