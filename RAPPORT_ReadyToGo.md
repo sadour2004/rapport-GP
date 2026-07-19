@@ -820,7 +820,148 @@ Les quatre stratégies employées sont **Éviter, Réduire, Transférer, Accepte
 
 > *Interprétation :* la stratégie dominante est **Réduire** (mesures préventives), complétée par **Transférer** (assurances, SLA) pour les risques à fort impact et faible contrôlabilité. Les mesures alimentent directement les livrables techniques (GPS, géofencing, cybersécurité) et le budget (réserve pour risques, assurances). Les risques matérialisés sont suivis dans le **journal des problèmes** (§7).
 
+---
+
+# 6. Plan de communication *(Étape 5)*
+
+## 6.1 Objectifs de communication
+
+| Public | Objectif de communication |
+|---|---|
+| Équipe (5 membres) | Aligner, coordonner, décider vite, tracer les décisions |
+| Autorités / mairie | Rassurer sur l'ordre public et la sécurité, obtenir et maintenir les autorisations |
+| Partenaires (hôtels, transport) | Susciter l'adhésion, préparer des accords à négocier |
+| Habitants | Informer, prévenir les nuisances (stationnement), favoriser l'acceptabilité |
+| Étudiants | Faire connaître l'offre, recruter des utilisateurs et des ambassadeurs |
+| Touristes | Simplifier l'usage (multilingue), valoriser le service (2030) |
+| Médias | Donner une image maîtrisée et crédible du projet |
+| Investisseurs potentiels | Démontrer la rigueur de gestion et la maîtrise des risques |
+
+## 6.2 Tableau des canaux, messages et supports
+
+| Public | Objectif | Message | Canal | Support | Fréquence | Responsable | Indicateur |
+|---|---|---|---|---|---|---|---|
+| Équipe | Coordonner | « Où en est-on, quels blocages ? » | Réunion | Compte rendu | Hebdomadaire | M1 | Taux de présence |
+| Équipe | Décider | « Décisions et arbitrages » | Comité de pilotage | Relevé de décisions | Mensuelle | M1 | Décisions tracées |
+| Mairie/autorités | Rassurer | « Sécurité, stationnement ordonné, conformité » | Réunion / courrier | Dossier, note | Aux jalons | M1 (S: M5) | Autorisation maintenue |
+| Partenaires | Convaincre | « Valeur ajoutée pour vos clients » | Rendez-vous | Présentation | Mensuelle | M5 | Accords en négociation |
+| Habitants | Informer | « Comment bien garer, où rouler » | Affichage / réseaux sociaux | Visuels, FAQ | Continue | M5 | Portée, plaintes |
+| Étudiants | Recruter | « Offre étudiante, rapidité » | Réseaux sociaux / campus | Posts, offres | Hebdomadaire | M5 | Inscriptions |
+| Touristes | Faciliter | « Simple, multilingue » | Application / hôtels / gare | Notifications, flyers | Continue (2030) | M5 | Trajets touristes |
+| Médias | Crédibiliser | « Projet structuré et responsable » | Communiqué | Dossier de presse | Aux jalons | M5 (S: M1) | Retombées presse |
+| Investisseurs | Convaincre | « Gestion rigoureuse, risques maîtrisés » | Rendez-vous | Business case | Trimestrielle | M4 (S: M1) | Intérêt exprimé |
+| Utilisateurs | Fidéliser | « Nouveautés, sécurité, bon usage » | Application | Notifications, tutoriel | Continue | M2 (S: M5) | Rétention, note |
+
+> *Interprétation :* le plan couvre les publics prioritaires identifiés dans la matrice pouvoir/intérêt (§2.6). Les canaux numériques (application, réseaux sociaux) servent l'acquisition et la fidélisation ; les canaux institutionnels (réunions, courriers) sécurisent les autorisations et partenariats.
+
+## 6.3 Matrice de communication
+
+| Information | Producteur | Destinataire | Format | Fréquence | Canal | Délai | Validation | Archivage |
+|---|---|---|---|---|---|---|---|---|
+| Compte rendu hebdomadaire | M1 | Équipe | Note | Hebdomadaire | E-mail | J+1 | M1 | Espace partagé |
+| Rapport mensuel | M1 | Comité/sponsor | Rapport | Mensuelle | Réunion + e-mail | J+2 | Sponsor | Espace partagé |
+| Suivi budgétaire | M4 | Comité | Tableau | Mensuelle | Tableau de bord | J+3 | M1 | Espace partagé |
+| Registre des risques | M4 | Comité | Tableau | Mensuelle (+ ad hoc) | Tableau de bord | J+2 | M1 | Espace partagé |
+| Rapport d'incident | M3/M2 | M1 + concernés | Formulaire | À l'événement | E-mail / app | ≤ 24 h | M1 | Registre incidents |
+| Rapport de test | M2 | Comité | Rapport | Fin de test | E-mail | J+2 | M1 | Espace partagé |
+| Demande de changement | Demandeur | Comité | Formulaire | À la demande | Outil de suivi | J+3 | Comité | Registre changements |
+| Comité de pilotage | M1 | Sponsor + membres | Relevé de décisions | Mensuelle | Réunion | J+1 | Sponsor | Espace partagé |
+| Communication de crise | M5 | Publics concernés | Message validé | À l'événement | Multi-canal | ≤ 2 h | M1 | Registre crise |
+| Rapport de clôture | M1 | Sponsor | Rapport | Fin de projet | Réunion + e-mail | J+5 | Sponsor | Espace partagé |
+
+> *Interprétation :* la matrice fixe **qui produit quoi, pour qui, quand et comment**, avec un **délai** et une **validation** explicites. Elle garantit la traçabilité (archivage systématique) et alimente la gouvernance (§2.7).
+
+## 6.4 Communication de crise
+
+Principe : **une seule voix** (porte-parole = M5, validation M1), un **message factuel et rapide** (≤ 2 h), la **priorité à la sécurité**, puis un suivi jusqu'à résolution.
+
+| Scénario de crise | Première action (≤ 2 h) | Message clé | Canal | Suivi |
+|---|---|---|---|---|
+| Accident grave | Sécuriser, alerter secours | « Sécurité prioritaire, enquête en cours » | Communiqué + app | Rapport d'incident, mesures |
+| Panne générale | Activer le mode dégradé | « Interruption temporaire, rétablissement en cours » | App + réseaux sociaux | Post-mortem technique |
+| Fuite de données | Contenir, notifier | « Mesures prises, données protégées » | E-mail utilisateurs + communiqué | Notification autorités |
+| Problème de batterie | Retirer le lot concerné | « Retrait préventif par précaution » | App + affichage | Contrôle fournisseur |
+| Vandalisme massif | Constater, déposer plainte | « Renforcement de la surveillance » | Réseaux sociaux | Assurance, réparation |
+| Interruption du paiement | Basculer passerelle de secours | « Paiement rétabli, aucun débit erroné » | App | SLA prestataire |
+| Polémique réseaux sociaux | Répondre factuellement | « Voici les faits et nos actions » | Réseaux sociaux | Veille renforcée |
+
+> *Interprétation :* ces procédures relient directement les risques critiques/élevés (§5.2) à une réponse communicationnelle prête à l'emploi, réduisant le délai de réaction en situation réelle.
+
+---
+
+# 7. Simulation des problèmes rencontrés
+
+> 🟡 **Cadre pédagogique :** cette partie est une **simulation** destinée à démontrer la capacité de pilotage de l'équipe. ReadyToGo n'est **pas** présenté comme un projet parfait : certains risques du §5 **se matérialisent réellement** dans le scénario et **modifient** le planning (§3.4), le budget (§10.1), le plan de charge (§4.6), les KPI (§8.1) et la courbe EVM (§8.2).
+
+## 7.1 Journal des problèmes rencontrés
+
+| ID | Date | Phase | Problème | Cause | Responsable | Impact coût | Impact délai | Impact qualité | Action corrective | Statut | Leçon apprise |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| P1 | 05/2026 | Autorisations | Retard d'autorisation municipale | Dossier initial incomplet | M1 | ~ +5 000 DH | **+3 sem** | Périmètre préservé | Compléter le dossier, avancer les tests app, utiliser la réserve de délai | ✅ Résolu | Anticiper et sécuriser les autorisations tôt |
+| P2 | 06/2026 | Achats | Hausse du prix des trottinettes (+8 %) | Transport & composants | M4 | **+72 000 DH** | 0 | Qualité maintenue | Négocier, modèles alternatifs, réserve pour risques | ✅ Résolu | Sécuriser les prix (clauses), garder une réserve |
+| P3 | 07/2026 | Développement | Retard de l'application (paiement + GPS) | Complexité d'intégration | M2 | +25 000 DH | **+2 sem** | MVP recentré | Prioriser, MVP, reporter fonctions secondaires, prestataire | ✅ Résolu | Découper en MVP, tester chaque sprint |
+| P4 | 06-08/2026 | Développement/Tests | Surcharge de M2 (> 120 %) | Cumul dev + tests | M1 | +15 000 DH | 0 (évité) | Risque d'erreurs réduit | Transferts de tâches, renfort externe, plan de charge màj | ✅ Résolu | Surveiller le plan de charge, rééquilibrer tôt |
+| P5 | 08/2026 | Tests | Pannes de 12/150 trottinettes | Défauts fournisseur | M3 | +20 000 DH (part fournisseur) | **+5 j** | Dispo. flotte 92 % | Contrôle complet, retrait, réparation/remplacement fournisseur, nouvelle recette | ⚠️ Surveillé | Recette rigoureuse à la réception |
+| P6 | 09/2026 | Tests utilisateurs | Stationnement hors zone | Comportement usagers | M5 | +8 000 DH | 0 | Satisfaction en baisse | Géofencing bloquant, messages app, signalétique, sensibilisation | ⚠️ Surveillé | Contraindre + éduquer le stationnement |
+| P7 | 09/2026 | Tests sécurité | Incident de cybersécurité (vulnérabilité) | Faille détectée en pentest | M2 | +18 000 DH | **+5 j** | Sécurité renforcée | Correction, revue des accès, MFA, test d'intrusion, validation obligatoire | ✅ Résolu | Cybersécurité dès la conception |
+| P8 | 10/2026 | Exploitation | Adoption plus faible que prévu | Emplacements, notoriété | M5 | +15 000 DH (marketing) | 0 | KPI usage sous cible | Enquête, réimplantation bornes, offre lancement, partenariats | ⚠️ Ouvert | Réviser les hypothèses de revenus |
+| P9 | 11/2026 | Exploitation | Accident mineur (sans gravité) | Mauvaise utilisation | M3 | +5 000 DH | 0 | Sécurité à renforcer | Assistance, analyse, tutoriel obligatoire, bridage débutants | ⚠️ Surveillé | Onboarding sécurité obligatoire |
+| P10 | 11/2026 | Exploitation | Demande d'ajout d'une zone (gare) | Pression partie prenante | M1 | 0 (reporté) | 0 | Périmètre protégé | Demande de changement, analyse d'impact, report en phase 2 | ⚠️ Ouvert | Discipline de périmètre (anti-dérive) |
+
+> *Interprétation :* les problèmes se répartissent sur **toutes les phases**. Quatre d'entre eux (P1, P2, P3, P5) ont un impact direct et mesurable sur le calendrier et le budget et sont donc développés en priorité, car ils modifient concrètement le Gantt, le budget, le plan de charge et la courbe EVM.
+
+## 7.2 Problèmes détaillés
+
+### Problème 1 — Retard dans l'autorisation municipale
+1. **Phase / date :** Autorisations — mai 2026. 2. **Description :** la demande d'occupation de l'espace public prend **3 semaines de plus** que prévu. 3. **Cause :** dossier initial incomplet. 4. **Signaux d'alerte :** absence d'accusé de réception, demandes de pièces complémentaires. 5. **Personnes concernées :** M1 (pilote), M5 (relation mairie), M3 (installation bornes en aval). 6. **Impact coût :** faible (~5 000 DH de constitution de dossier). 7. **Impact délai :** +3 semaines sur le chemin critique. 8. **Impact qualité/périmètre :** nul (périmètre préservé). 9. **Décision de l'équipe :** ne pas attendre passivement — réordonnancer. 10. **Actions correctives :** M1 met à jour le planning ; M5 organise une réunion avec les parties prenantes ; l'équipe complète les documents ; les **tests de l'application sont avancés** ; une **réserve de délai** est consommée. 11. **Responsable de l'action :** M1. 12. **Résultat :** autorisation obtenue le 29/05/2026, retard partiellement absorbé. 13. **Leçon apprise :** engager les démarches administratives au plus tôt et faire vérifier la complétude du dossier.
+
+### Problème 2 — Augmentation du prix des trottinettes
+1. **Phase / date :** Achats — juin 2026. 2. **Description :** le fournisseur augmente son prix de **8 %**. 3. **Cause :** coût du transport et de certains composants. 4. **Signaux :** révision de devis, hausse des indices matières. 5. **Concernés :** M4 (budget/achats), M3 (flotte). 6. **Impact coût :** **+72 000 DH** (8 % de 900 000 DH). 7. **Impact délai :** nul. 8. **Impact qualité :** aucune baisse (la sécurité et la qualité des trottinettes **ne sont pas réduites**). 9. **Décision :** absorber le surcoût sans dégrader la qualité. 10. **Actions :** M4 négocie avec plusieurs fournisseurs ; M3 analyse des modèles alternatifs ; une **dépense non prioritaire est réduite** ; une partie de la **réserve pour risques** est utilisée. 11. **Responsable :** M4. 12. **Résultat :** surcoût contenu, CPI dégradé temporairement (§8.2). 13. **Leçon :** sécuriser les prix par des clauses et maintenir une réserve.
+
+### Problème 3 — Retard de l'application mobile
+1. **Phase / date :** Développement — juillet 2026. 2. **Description :** l'intégration du paiement et du GPS prend **2 semaines** de plus. 3. **Cause :** complexité d'intégration technique. 4. **Signaux :** vélocité de sprint en baisse, bugs récurrents. 5. **Concernés :** M2 (dev), M1 (planning). 6. **Impact coût :** +25 000 DH (prestataire). 7. **Impact délai :** +2 semaines (le logiciel devient critique). 8. **Impact qualité :** MVP recentré (fonctions secondaires reportées). 9. **Décision :** livrer un **MVP** plutôt qu'un produit complet en retard. 10. **Actions :** priorisation des fonctionnalités ; **version minimale fonctionnelle** ; report de fonctions secondaires ; **prestataire technique supplémentaire** ; tests en fin de chaque sprint. 11. **Responsable :** M2. 12. **Résultat :** MVP livré le 14/08/2026, SPI dégradé puis redressé (§8.2, §8.3). 13. **Leçon :** découper en MVP et tester à chaque itération.
+
+### Problème 4 — Surcharge d'un membre
+1. **Phase / date :** Développement/Tests — juin à août 2026. 2. **Description :** M2 dépasse **120 %** de sa capacité (pic 125 %). 3. **Cause :** cumul développement + tests. 4. **Signaux :** dépassements d'horaires, retards de validation. 5. **Concernés :** M2, M1, M5. 6. **Impact coût :** +15 000 DH (assistance externe). 7. **Impact délai :** évité grâce au rééquilibrage. 8. **Impact qualité :** risque d'erreurs et de fatigue réduit. 9. **Décision :** rééquilibrer la charge. 10. **Actions :** documentation transférée à M1 ; suivi des tests utilisateurs transféré à M5 ; planning rééquilibré ; assistance externe temporaire ; **plan de charge mis à jour** (§4.6). 11. **Responsable :** M1. 12. **Résultat :** taux de M2 ramené sous 106 %. 13. **Leçon :** surveiller le plan de charge et agir dès le dépassement.
+
+### Problème 5 — Pannes pendant les tests
+1. **Phase / date :** Tests — août 2026. 2. **Description :** **12 trottinettes sur 150** présentent des défauts (batterie, freinage, verrouillage). 3. **Cause :** défauts fournisseur. 4. **Signaux :** anomalies répétées en contrôle. 5. **Concernés :** M3 (flotte), M2 (verrouillage). 6. **Impact coût :** ~20 000 DH (à la charge du fournisseur en partie). 7. **Impact délai :** +5 j (report de la validation technique). 8. **Impact qualité :** **disponibilité initiale limitée à 92 %**. 9. **Décision :** ne pas valider tant que le taux cible n'est pas atteint. 10. **Actions :** M3 organise un **contrôle complet** ; M2 vérifie le verrouillage ; les unités défectueuses sont **retirées** ; le fournisseur **répare ou remplace** ; une **nouvelle recette technique** est organisée. 11. **Responsable :** M3. 12. **Résultat :** disponibilité rétablie ; **risque R12/R02 sous surveillance**. 13. **Leçon :** exiger une recette rigoureuse à la réception (SLA fournisseur).
+
+### Problème 6 — Stationnement incorrect
+1. **Phase / date :** Tests utilisateurs — septembre 2026. 2. **Description :** plusieurs trottinettes sont laissées hors des zones autorisées. 3. **Cause :** comportement des usagers. 4. **Signaux :** plaintes de riverains, signalements. 5. **Concernés :** M5 (communication), M3 (redistribution). 6. **Impact coût :** +8 000 DH (signalétique + campagne). 7. **Impact délai :** nul. 8. **Impact qualité :** baisse de satisfaction, risque piéton. 9. **Décision :** contraindre techniquement + sensibiliser. 10. **Actions :** **géofencing** empêchant la fin de trajet hors zone ; messages dans l'application ; **signalétique** supplémentaire ; campagne de sensibilisation (M5) ; suivi du **taux de stationnement conforme** (KPI). 11. **Responsable :** M5. 12. **Résultat :** taux conforme en amélioration ; **risque R13 sous surveillance**. 13. **Leçon :** combiner contrainte technique et pédagogie.
+
+### Problème 7 — Incident de cybersécurité
+1. **Phase / date :** Tests de sécurité — septembre 2026. 2. **Description :** une **vulnérabilité** est détectée ; **aucun vol de données réel**, mais le lancement est temporairement suspendu. 3. **Cause :** faille identifiée lors d'un test. 4. **Signaux :** alerte du test d'intrusion. 5. **Concernés :** M2 (technique). 6. **Impact coût :** +18 000 DH (correction + nouveau test). 7. **Impact délai :** +5 j. 8. **Impact qualité :** sécurité renforcée. 9. **Décision :** ne pas lancer avant correction validée. 10. **Actions :** **correction immédiate** ; revue et modification des accès ; **renforcement de l'authentification (MFA)** ; **test d'intrusion supplémentaire** ; validation obligatoire avant mise en service. 11. **Responsable :** M2. 12. **Résultat :** vulnérabilité corrigée, lancement autorisé le 01/10/2026 ; **risque R09 traité**. 13. **Leçon :** intégrer la cybersécurité dès la conception (*security by design*).
+
+### Problème 8 — Adoption plus faible que prévu
+1. **Phase / date :** Exploitation — octobre 2026 (1ᵉʳ mois). 2. **Description :** le nombre moyen de trajets par trottinette est **inférieur à l'objectif**. 3. **Cause :** emplacements des bornes, notoriété insuffisante. 4. **Signaux :** KPI d'usage sous cible, revenus sous prévisions. 5. **Concernés :** M5 (communication), M4 (revenus). 6. **Impact coût :** +15 000 DH (offre de lancement, marketing). 7. **Impact délai :** nul. 8. **Impact qualité/modèle :** risque sur le modèle économique. 9. **Décision :** comprendre puis stimuler l'usage. 10. **Actions :** **enquête utilisateurs** ; amélioration de l'**emplacement des bornes** ; **offre de lancement** limitée ; partenariats **envisagés** avec hôtels et établissements étudiants ; meilleure communication ; **révision des hypothèses de revenus** (§10.2). 11. **Responsable :** M5. 12. **Résultat :** usage en progression ; **objectif non encore atteint → problème ouvert**. 13. **Leçon :** ne pas surestimer l'adoption ; prévoir des leviers d'activation.
+
+### Problème 9 — Accident mineur pendant le pilote
+1. **Phase / date :** Exploitation — novembre 2026. 2. **Description :** un utilisateur **chute sans blessure grave** (mauvaise utilisation). 3. **Cause :** usage inapproprié. 4. **Signaux :** premier signalement d'incident. 5. **Concernés :** M3 (opérations/sécurité). 6. **Impact coût :** ~5 000 DH (tutoriel, inspection). 7. **Impact délai :** nul. 8. **Impact qualité :** consignes de sécurité à revoir. 9. **Décision :** renforcer la prévention. 10. **Actions :** **assistance immédiate** ; analyse de l'incident ; inspection de la trottinette ; **tutoriel obligatoire** dans l'application ; **limitation de vitesse pour les nouveaux utilisateurs** ; amélioration de la signalétique ; suivi du **taux d'incidents**. 11. **Responsable :** M3. 12. **Résultat :** mesures déployées ; **risque R03 sous surveillance**. 13. **Leçon :** rendre l'onboarding sécurité obligatoire.
+
+### Problème 10 — Demande de modification du périmètre
+1. **Phase / date :** Exploitation — novembre 2026. 2. **Description :** une partie prenante demande d'**ajouter immédiatement une zone près de la gare**, non incluse dans le pilote. 3. **Cause :** pression d'une partie prenante. 4. **Signaux :** demande formulée hors cadre. 5. **Concernés :** M1 (périmètre), M4 (coût), M3 (flotte/bornes). 6. **Impact coût :** 0 (demande reportée). 7. **Impact délai :** 0 (report). 8. **Impact périmètre :** risque de **dérive** (scope creep). 9. **Décision :** appliquer le processus de changement. 10. **Actions :** création d'une **demande officielle de changement** (§8.4) ; **analyse d'impact** (coût, délai, qualité, ressources) ; décision du **comité de pilotage** ; **report en phase 2** ; mise à jour du périmètre **uniquement après validation**. 11. **Responsable :** M1. 12. **Résultat :** périmètre pilote protégé ; demande **inscrite en phase 2 → ouverte**. 13. **Leçon :** discipline de périmètre et gouvernance du changement.
+
+## 7.3 Cohérence avec le reste du rapport
+
+Les problèmes simulés **modifient réellement** les autres parties :
+
+- **Gantt (§3.4) :** le planning « réel » intègre les retards P1 (+3 sem), P3 (+2 sem) et la reprise de tests (P5, P7) ; le lancement passe du 25/09 au 01/10/2026.
+- **Budget (§10.1) :** les surcoûts P2 (+72 k), P3 (+25 k), P4 (+15 k), P5 (+20 k), P6 (+8 k), P7 (+18 k), P8 (+15 k), P9 (+5 k) sont financés par la **réserve pour risques** et des arbitrages ; ils expliquent l'écart AC/BAC de l'EVM.
+- **Plan de charge (§4.6) :** P4 fait apparaître la surcharge de M2 (pic 125 %) et les rééquilibrages.
+- **RACI (§4.5) :** les actions correctives respectent les responsabilités (M1 planning/périmètre, M2 technique/sécurité, M3 flotte, M4 coûts, M5 communication).
+- **Registre des risques (§5.2) :** P1↔R04, P2↔R17, P3↔R08, P5↔R12/R02, P6↔R13, P7↔R09, P8↔R14, P9↔R03, P10↔dérive de périmètre.
+- **KPI (§8.1) :** disponibilité (92 % lors de P5), stationnement conforme (P6), usage (P8), incidents (P9) évoluent sous l'effet des problèmes puis des corrections.
+- **EVM (§8.2) :** le retard application (P3) et le surcoût équipements (P2) créent une période **SPI < 1** et **CPI < 1**, suivie d'un redressement.
+- **RETEX (§9.4) et réserves de livraison (§9.1) :** les problèmes non totalement clos (P5, P6, P8, P9, P10) sont consignés comme **réserves** ou points de surveillance.
+
+**Tous les problèmes ne sont pas résolus immédiatement.** P8 et P10 restent **ouverts** ; P5, P6, P9 restent **sous surveillance** après le lancement.
+
+> **Analyse de synthèse — ce que révèle la simulation.** La réussite d'un projet ne signifie pas l'absence de problèmes, mais la **capacité de l'équipe à** : (1) **détecter** les écarts tôt (signaux d'alerte, KPI, EVM) ; (2) **communiquer** rapidement (comité, escalade) ; (3) **décider** (arbitrages, MVP, report) ; (4) **adapter le planning** (réordonnancement, réserve de délai) ; (5) **contrôler les coûts** (réserve pour risques, négociation) ; (6) **protéger la qualité et la sécurité** (recette, géofencing, cybersécurité) ; (7) **tirer des leçons** pour les phases suivantes. C'est cette **résilience organisée**, plus qu'une exécution sans accroc, qui caractérise une bonne gestion de projet.
+
 <!-- END -->
+
+
 
 
 
