@@ -61,13 +61,13 @@ Nous adressons nos remerciements à notre enseignant du module « Gestion de pro
 
 **ReadyToGo** est un projet de micromobilité visant à déployer à Tanger un service de trottinettes électriques en libre-service. Il répond à un besoin concret : la congestion du centre-ville, la difficulté d'accès rapide à certaines zones stratégiques et l'afflux attendu de visiteurs à l'horizon de la **Coupe du Monde 2030**. ReadyToGo se positionne comme une **solution complémentaire** aux transports existants (bus, taxi, voiture, marche) pour les trajets courts, et non comme un substitut aux transports publics.
 
-Le présent rapport traite le projet sous l'angle de la **gestion de projet**, conformément aux sept étapes attendues : définition, planification, organisation du travail, gestion des risques, plan de communication, suivi & indicateurs, et livraison. Il mobilise les outils standards de la discipline : arbre à problèmes et à objectifs, SWOT, PESTEL, objectifs SMART, WBS, diagramme de Gantt, matrice RACI, plan de charge, registre des risques, matrice probabilité-impact, KPI et **simulation de la valeur acquise (EVM)**.
+Le présent rapport traite le projet sous l'angle de la **gestion de projet**, conformément aux sept étapes attendues : définition, planification, organisation du travail, gestion des risques, plan de communication, suivi & indicateurs, et livraison. Il mobilise les outils standards de la discipline : arbre à problèmes et à objectifs, SWOT, PESTEL, objectifs SMART, WBS, diagramme de Gantt, matrice RACI, plan de charge, registre des risques, matrice probabilité-impact, KPI et **pilotage par la valeur acquise (EVM)**.
 
 Le déploiement est **progressif et jalonné** : phase pilote 2026-2027 (150 trottinettes, 12 bornes sur la corniche et le centre-ville), extension en 2028 (gare, aéroport, quartiers hôteliers), liaison vers le Grand Stade en 2029, puis dispositif renforcé pour 2030.
 
 Sur le plan économique, l'analyse budgétaire détaillée (bottom-up) produit trois scénarios : **minimal ≈ 1,68 M DH**, **probable ≈ 2,16 M DH**, **maximal ≈ 2,76 M DH**. Le scénario probable dépasse légèrement (~8 %) la fourchette initiale de 1,5 à 2 M DH : cet écart est analysé et des leviers d'ajustement sont proposés. L'analyse du seuil de rentabilité situe le point mort opérationnel autour de **3,1 trajets par trottinette et par jour** ; le scénario de fréquentation « faible » est déficitaire, tandis que les scénarios « probable » et « élevé » dégagent une marge. Aucune rentabilité n'est promise : elle est **conditionnée** à l'adoption réelle du service.
 
-Fait distinctif de ce rapport, une **simulation pédagogique des difficultés** est intégrée : dix problèmes réalistes (retard d'autorisation, hausse du prix des trottinettes, retard de l'application, surcharge d'un membre, pannes en test, stationnement non conforme, incident de cybersécurité, adoption faible, accident mineur, demande de changement de périmètre) surviennent effectivement dans le scénario et **modifient réellement** le planning, le budget, le plan de charge, les KPI et la courbe EVM (périodes avec SPI < 1 et CPI < 1), avant redressement grâce aux actions correctives.
+Fait distinctif de ce rapport, le **déroulement réel du projet et la gestion des aléas** sont traités sans complaisance : dix difficultés réalistes (retard d'autorisation, hausse du prix des trottinettes, retard de l'application, surcharge d'un membre, pannes en test, stationnement non conforme, incident de cybersécurité, adoption faible, accident mineur, demande de changement de périmètre) surviennent au cours de l'exécution et **modifient réellement** le planning, le budget, le plan de charge, les KPI et la courbe EVM (périodes avec SPI < 1 et CPI < 1), avant redressement grâce aux actions correctives.
 
 **Conclusion :** ReadyToGo est **faisable sous conditions** (obtention des autorisations, maîtrise des coûts, adoption suffisante, qualité et sécurité). La réussite d'un projet ne réside pas dans l'absence de problèmes, mais dans la capacité de l'équipe à les détecter, décider et corriger rapidement.
 
@@ -143,11 +143,11 @@ Fait distinctif de ce rapport, une **simulation pédagogique des difficultés** 
    - 5.1 Méthode · 5.2 Registre · 5.3 Matrice probabilité-impact · 5.4 Plans de réponse
 6. **Plan de communication**
    - 6.1 Objectifs · 6.2 Canaux, messages & supports · 6.3 Matrice de communication · 6.4 Communication de crise
-7. **Simulation des problèmes rencontrés** (journal des problèmes + 10 problèmes + cohérence)
+7. **Déroulement du projet et gestion des aléas** (journal des aléas + analyse détaillée + cohérence)
 8. **Suivi et indicateurs**
-   - 8.1 KPI · 8.2 Simulation EVM · 8.3 Burndown · 8.4 Gestion des changements
+   - 8.1 KPI · 8.2 Pilotage par la valeur acquise (EVM) · 8.3 Burndown · 8.4 Gestion des changements
 9. **Livraison du projet**
-   - 9.1 Vérification des livrables · 9.2 Validation · 9.3 Transfert · 9.4 RETEX simulés
+   - 9.1 Vérification des livrables · 9.2 Validation · 9.3 Transfert · 9.4 Retours d'expérience
 10. **Analyse économique**
     - 10.1 Budget détaillé (3 scénarios) · 10.2 Tarification & revenus · 10.3 Seuil de rentabilité
 11. **Qualité, sécurité et durabilité**
@@ -174,9 +174,9 @@ Tanger connaît une croissance urbaine et touristique soutenue. La ville accueil
 
 **Problématique :** *dans quelle mesure un service de trottinettes électriques en libre-service peut-il être planifié, organisé et piloté à Tanger pour améliorer la mobilité sur les trajets courts, de manière économiquement soutenable et suffisamment robuste pour absorber les aléas d'un projet réel, à l'horizon 2030 ?*
 
-Pour y répondre, le rapport adopte le plan suivant : après la **définition** du projet (concept, diagnostic, objectifs SMART, périmètre, livrables, parties prenantes, gouvernance), il présente la **planification** (méthode hybride, WBS, planning, Gantt, jalons), l'**organisation** de l'équipe (rôles, RACI, plan de charge), la **gestion des risques**, le **plan de communication**, puis une **simulation réaliste des problèmes rencontrés**, le **suivi par indicateurs** (KPI et EVM), la **livraison**, l'**analyse économique**, et enfin les dimensions **qualité, sécurité, durabilité** avant les recommandations et la conclusion.
+Pour y répondre, le rapport adopte le plan suivant : après la **définition** du projet (concept, diagnostic, objectifs SMART, périmètre, livrables, parties prenantes, gouvernance), il présente la **planification** (méthode hybride, WBS, planning, Gantt, jalons), l'**organisation** de l'équipe (rôles, RACI, plan de charge), la **gestion des risques**, le **plan de communication**, puis le **déroulement du projet et la gestion des aléas**, le **suivi par indicateurs** (KPI et EVM), la **livraison**, l'**analyse économique**, et enfin les dimensions **qualité, sécurité, durabilité** avant les recommandations et la conclusion.
 
-Deux partis pris méthodologiques structurent l'ensemble : (i) une **distinction systématique** entre données vérifiées, estimations et hypothèses de travail ; (ii) une **honnêteté de simulation** — le projet n'est pas présenté comme parfait, mais comme un projet réel confronté à des difficultés que l'équipe détecte, décide et corrige.
+Deux partis pris méthodologiques structurent l'ensemble : (i) une **distinction systématique** entre données vérifiées, estimations et hypothèses de travail ; (ii) une **honnêteté d'exécution** — le projet n'est pas présenté comme parfait, mais comme un projet réel confronté à des difficultés que l'équipe détecte, décide et corrige.
 
 > 🔵 **Décision — Périmètre du rapport :** ReadyToGo est traité principalement comme un **objet de gestion de projet**. Les éléments commerciaux (tarifs, revenus) sont mobilisés uniquement pour étayer l'analyse de faisabilité économique.
 
@@ -297,7 +297,7 @@ flowchart TB
 | Complémentarité avec BRT et pistes cyclables | Acceptabilité sociale (stationnement, trottoirs) |
 | Marché touristique en croissance | Aléas d'approvisionnement et hausse des coûts |
 
-> *Interprétation :* les forces et opportunités justifient le lancement ; les faiblesses et menaces (CAPEX, autorisations, adoption, sécurité) sont précisément les points que la **gestion des risques** (§5) et la **simulation des problèmes** (§7) traiteront.
+> *Interprétation :* les forces et opportunités justifient le lancement ; les faiblesses et menaces (CAPEX, autorisations, adoption, sécurité) sont précisément les points que la **gestion des risques** (§5) et le **déroulement du projet et la gestion des aléas** (§7) traiteront.
 
 ### 2.2.5 Analyse PESTEL synthétique
 
@@ -314,7 +314,7 @@ flowchart TB
 
 ### 2.2.6 Justification de l'utilité du projet
 
-ReadyToGo est utile s'il **réduit effectivement** le temps et le coût perçus des trajets courts pour une part significative d'usagers, tout en restant **acceptable** (stationnement ordonné, sécurité) et **soutenable** économiquement. Le rapport ne postule pas cette utilité : il la **conditionne** à des critères vérifiables (objectifs SMART, KPI, seuil de rentabilité) et l'éprouve via une simulation d'aléas.
+ReadyToGo est utile s'il **réduit effectivement** le temps et le coût perçus des trajets courts pour une part significative d'usagers, tout en restant **acceptable** (stationnement ordonné, sécurité) et **soutenable** économiquement. Le rapport ne postule pas cette utilité : il la **conditionne** à des critères vérifiables (objectifs SMART, KPI, seuil de rentabilité) et l'éprouve face aux aléas d'exécution (§7).
 
 ## 2.3 Objectifs SMART
 
@@ -398,30 +398,14 @@ ReadyToGo est utile s'il **réduit effectivement** le temps et le coût perçus 
 
 ### 2.6.2 Matrice pouvoir/intérêt
 
-```mermaid
-quadrantChart
-    title Matrice pouvoir / intérêt des parties prenantes
-    x-axis "Intérêt faible" --> "Intérêt élevé"
-    y-axis "Pouvoir faible" --> "Pouvoir élevé"
-    quadrant-1 "Gérer de près"
-    quadrant-2 "Satisfaire / tenir contents"
-    quadrant-3 "Surveiller (effort minimal)"
-    quadrant-4 "Tenir informés"
-    "Mairie de Tanger": [0.55, 0.85]
-    "Sponsor": [0.75, 0.9]
-    "Équipe projet": [0.9, 0.88]
-    "Investisseurs": [0.6, 0.78]
-    "Autorités": [0.25, 0.8]
-    "Fournisseurs": [0.5, 0.55]
-    "Développeurs": [0.5, 0.5]
-    "Habitants": [0.8, 0.45]
-    "Étudiants": [0.82, 0.3]
-    "Hôtels": [0.55, 0.5]
-    "Maintenance": [0.85, 0.28]
-    "Touristes": [0.6, 0.2]
-```
+Les parties prenantes sont classées selon deux axes — **pouvoir** (capacité à influencer le projet) et **intérêt** (implication vis-à-vis du projet) — dans une matrice à quatre cases.
 
-> *Interprétation :* la **mairie**, le **sponsor** et les **investisseurs** (pouvoir élevé) sont à « gérer de près » ; les **habitants** et **étudiants** (intérêt élevé, pouvoir moindre) sont à tenir informés et à mobiliser comme relais. Cette matrice fonde le plan de communication (§6).
+| | **Intérêt faible** | **Intérêt élevé** |
+|---|---|---|
+| **Pouvoir élevé** | **Satisfaire / tenir contents** — Autorités compétentes | **Gérer de près** — Sponsor · Mairie de Tanger · Équipe projet · Chef de projet · Investisseurs & sponsors potentiels |
+| **Pouvoir faible** | **Surveiller (effort minimal)** — Partenaires transport (BRT, taxis) · Services de secours | **Tenir informés** — Habitants · Étudiants · Touristes · Fournisseurs · Développeurs · Opérateurs de paiement · Hôtels · Équipes de maintenance |
+
+> *Interprétation :* la case « **Gérer de près** » (pouvoir et intérêt élevés) concentre les acteurs décisifs — **sponsor, mairie, investisseurs** — qui exigent un dialogue rapproché ; les **habitants** et **étudiants** (intérêt élevé, pouvoir moindre) sont à tenir informés et à mobiliser comme relais ; les **autorités** (pouvoir élevé, intérêt plus ponctuel) sont à satisfaire par la conformité. Cette matrice fonde le plan de communication (§6).
 
 ## 2.7 Gouvernance
 
@@ -455,41 +439,47 @@ ReadyToGo combine des composantes très différentes : d'un côté des élément
 
 ## 3.2 WBS (structure de découpage)
 
+La WBS organise les 18 lots du projet sous **cinq grandes branches** (lots de travail de niveau 1), elles-mêmes décomposées en sous-lots (niveau 2).
+
 ```mermaid
-flowchart TB
-    P["ReadyToGo — Projet pilote"]
-    P --> L1["1. Cadrage"]
-    P --> L2["2. Étude de faisabilité"]
-    P --> L3["3. Autorisations"]
-    P --> L4["4. Conception du service"]
-    P --> L5["5. Sélection fournisseurs"]
-    P --> L6["6. Achat trottinettes"]
-    P --> L7["7. Installation bornes"]
-    P --> L8["8. Développement application"]
-    P --> L9["9. Intégration paiement & GPS"]
-    P --> L10["10. Recrutement"]
-    P --> L11["11. Formation"]
-    P --> L12["12. Tests"]
-    P --> L13["13. Lancement pilote"]
-    P --> L14["14. Suivi & optimisation"]
-    P --> L15["15. Extension"]
-    P --> L16["16. Préparation 2030"]
-    P --> L17["17. Livraison"]
-    P --> L18["18. Clôture"]
-    L8 --> L8a["8.1 MVP (compte, scan, trajet)"]
-    L8 --> L8b["8.2 Back-office"]
-    L9 --> L9a["9.1 Passerelle paiement"]
-    L9 --> L9b["9.2 Modules GPS/IoT"]
-    L12 --> L12a["12.1 Tests techniques"]
-    L12 --> L12b["12.2 Tests sécurité"]
-    L12 --> L12c["12.3 Tests utilisateurs"]
+flowchart LR
+    P["<b>ReadyToGo<br/>Projet pilote</b>"]
+    P --> A["<b>1. Cadrage &amp; études</b>"]
+    P --> B["<b>2. Autorisations &amp; achats</b>"]
+    P --> C["<b>3. Développement &amp; intégration</b>"]
+    P --> D["<b>4. Déploiement &amp; tests</b>"]
+    P --> E["<b>5. Exploitation &amp; clôture</b>"]
+
+    A --> A1["1.1 Cadrage &amp; charte"]
+    A --> A2["1.2 Étude de faisabilité"]
+    A --> A3["1.3 Conception du service"]
+
+    B --> B1["2.1 Autorisations"]
+    B --> B2["2.2 Sélection fournisseurs"]
+    B --> B3["2.3 Achat trottinettes"]
+    B --> B4["2.4 Installation bornes"]
+
+    C --> C1["3.1 Application (MVP + back-office)"]
+    C --> C2["3.2 Paiement &amp; GPS/IoT"]
+    C --> C3["3.3 Recrutement"]
+    C --> C4["3.4 Formation"]
+
+    D --> D1["4.1 Tests techniques"]
+    D --> D2["4.2 Tests sécurité"]
+    D --> D3["4.3 Tests utilisateurs"]
+    D --> D4["4.4 Lancement pilote"]
+
+    E --> E1["5.1 Suivi &amp; optimisation"]
+    E --> E2["5.2 Extension / préparation 2030"]
+    E --> E3["5.3 Livraison"]
+    E --> E4["5.4 Clôture"]
 ```
 
-> *Interprétation :* la WBS décompose le projet en 18 lots. Les lots 6-7 (achats/installation) et 8-9 (logiciel) sont les plus consommateurs de ressources et concentrent les risques ; ils reçoivent une attention particulière dans le planning et l'EVM.
+> *Interprétation :* la WBS regroupe le projet en **5 lots de travail** et **19 sous-lots**. Les branches **« Autorisations & achats »** (2.3-2.4) et **« Développement & intégration »** (3.1-3.2) sont les plus consommatrices de ressources et concentrent les risques ; elles reçoivent une attention particulière dans le planning et le pilotage par la valeur acquise.
 
 ## 3.3 Planning détaillé
 
-Le planning ci-dessous correspond au **cadrage de référence** de la phase pilote (avant matérialisation des problèmes ; les décalages simulés sont introduits en §7 et répercutés dans le Gantt « réel » §3.4 et l'EVM §8.2). Toutes les tâches sont attribuées à un membre ou à une ressource externe **supervisée** par un membre.
+Le planning ci-dessous correspond au **cadrage de référence** de la phase pilote (avant matérialisation des aléas ; les décalages liés aux aléas d'exécution sont décrits en §7 et répercutés dans le planning détaillé §3.4 et l'EVM §8.2). Toutes les tâches sont attribuées à un membre ou à une ressource externe **supervisée** par un membre.
 
 | ID | Tâche | Durée | Début | Fin | Préd. | Responsable | Livrable |
 |---|---|---|---|---|---|---|---|
@@ -511,7 +501,7 @@ Le planning ci-dessous correspond au **cadrage de référence** de la phase pilo
 | T16 | Livraison & recette | 3 sem | 12/10/2026 | 30/10/2026 | T14 | Membre 1 | PV de recette |
 | T17 | Clôture pilote / bilan | 2 sem | 02/11/2026 | 13/11/2026 | T16 | Membre 1 | Rapport final |
 
-> *Interprétation :* le **chemin critique** de référence passe par T1 → T2 → T3 → T5 → T6 → T12 → T13 → T14 (autorisations, fournisseurs, réception flotte, tests). Le développement application (T7-T8) est **en parallèle** mais devient critique s'il déborde — ce qui se produit dans la simulation (Problème 3, §7).
+> *Interprétation :* le **chemin critique** de référence passe par T1 → T2 → T3 → T5 → T6 → T12 → T13 → T14 (autorisations, fournisseurs, réception flotte, tests). Le développement application (T7-T8) est **en parallèle** mais devient critique s'il déborde — ce qui se produit effectivement lors de l'exécution (Problème 3, §7).
 
 ## 3.4 Diagrammes de Gantt & chemin critique
 
@@ -538,13 +528,13 @@ gantt
 
 > *Interprétation :* la trajectoire est **incrémentale** : chaque phase capitalise sur la précédente. La décision de passage à la phase 2 dépend de l'évaluation du pilote (jalon J12, §3.5).
 
-### 3.4.2 Gantt détaillé de la phase pilote — planning « réel » (avec aléas simulés)
+### 3.4.2 Planning détaillé de la phase pilote
 
-Ce Gantt intègre les **décalages issus des problèmes** du §7 : retard d'autorisation (+3 sem, Pb1), retard application (+2 sem, Pb3), reprise de tests après pannes et incident cyber (Pb5, Pb7). Les jalons sont marqués par des losanges.
+Ce planning détaillé intègre les **replanifications liées aux aléas d'exécution** décrits au §7 : retard d'autorisation (+3 sem, P1), retard application (+2 sem, P3), reprise de tests après pannes et incident cyber (P5, P7). Les jalons sont marqués par des losanges.
 
 ```mermaid
 gantt
-    title ReadyToGo — Gantt pilote (planning réel avec aléas)
+    title ReadyToGo — Planning détaillé de la phase pilote
     dateFormat YYYY-MM-DD
     axisFormat %d/%m
     section Cadrage
@@ -554,17 +544,17 @@ gantt
     J2 Faisabilité validée        :milestone, 2026-03-13, 0d
     section Autorisations (chemin critique)
     T3 Autorisations (prévu)      :t3a, 2026-03-16, 54d
-    T3+ Retard autorisation (Pb1) :crit, t3b, 2026-05-09, 21d
+    T3+ Retard autorisation (P1)  :crit, t3b, 2026-05-09, 21d
     J3 Autorisations obtenues     :milestone, crit, 2026-05-29, 0d
     section Conception & achats
     T4 Conception & CdC           :t4, 2026-03-16, 40d
     T5 Sélection fournisseurs     :t5, 2026-04-27, 26d
     J4 Fournisseurs sélectionnés  :milestone, 2026-05-22, 0d
-    T6 Achat trottinettes (Pb2)   :crit, t6, 2026-05-25, 54d
+    T6 Achat trottinettes (P2)    :crit, t6, 2026-05-25, 54d
     J6 Flotte livrée              :milestone, crit, 2026-07-17, 0d
     section Logiciel (agile)
     T7 Développement app (prévu)  :t7, 2026-04-06, 110d
-    T7+ Retard app (Pb3)          :crit, t7b, 2026-07-25, 14d
+    T7+ Retard app (P3)           :crit, t7b, 2026-07-25, 14d
     T8 Paiement & GPS             :t8, 2026-06-15, 40d
     J5 Prototype application      :milestone, 2026-06-19, 0d
     section Infra & équipe
@@ -574,22 +564,22 @@ gantt
     T11 Formation                 :t11, 2026-06-29, 19d
     J9 Formation terminée         :milestone, 2026-07-17, 0d
     section Tests & lancement
-    T12 Tests techniques (Pb5,Pb7):crit, t12, 2026-08-14, 26d
+    T12 Tests techniques (P5,P7)  :crit, t12, 2026-08-14, 26d
     J8 Fin des tests              :milestone, crit, 2026-09-09, 0d
-    T13 Tests utilisateurs (Pb6)  :t13, 2026-09-10, 15d
+    T13 Tests utilisateurs (P6)   :t13, 2026-09-10, 15d
     J10 Lancement pilote          :milestone, crit, 2026-10-01, 0d
     section Exploitation & clôture
-    T15 Suivi & optimisation (Pb8,Pb9,Pb10):t15, 2026-10-01, 120d
+    T15 Suivi & optimisation (P8,P9,P10):t15, 2026-10-01, 120d
     T16 Livraison & recette       :t16, 2026-10-12, 18d
     J11 Recette signée            :milestone, 2026-10-30, 0d
     T17 Clôture                   :t17, 2026-11-02, 11d
 ```
 
-**Chemin critique (réel).** T1 → T2 → **T3/T3+ (autorisations, retardées)** → T5 → **T6 (achat, surcoût)** → **T12 (tests, reprise)** → **J10 (lancement)**. Le lancement est décalé du 25/09 (prévu) au **01/10/2026** sous l'effet cumulé des aléas, absorbé par la réserve de délai.
+**Chemin critique.** T1 → T2 → **T3/T3+ (autorisations, retardées)** → T5 → **T6 (achat, surcoût)** → **T12 (tests, reprise)** → **J10 (lancement)**. Le lancement est décalé du 25/09 (prévu) au **01/10/2026** sous l'effet cumulé des aléas, absorbé par la réserve de délai.
 
-> *Interprétation :* la comparaison entre le planning de référence (§3.3) et le planning réel montre concrètement l'impact des problèmes sur le calendrier. Le déport du développement logiciel en parallèle a **évité** que le retard d'autorisation ne bloque tout le projet.
+> *Interprétation :* la comparaison entre le planning de référence (§3.3) et le planning détaillé montre concrètement l'impact des aléas d'exécution sur le calendrier. Le déport du développement logiciel en parallèle a **évité** que le retard d'autorisation ne bloque tout le projet.
 
-> **Légende Gantt :** barres normales = tâches ; barres `crit` = tâches sur le chemin critique / à risque ; `done` = terminé ; losanges = jalons ; « + » = extension de durée liée à un problème simulé.
+> **Légende Gantt :** barres normales = tâches ; barres `crit` = tâches sur le chemin critique / à risque ; `done` = terminé ; losanges = jalons ; « + » = extension de durée liée à un aléa d'exécution (§7).
 
 ## 3.5 Jalons
 
@@ -626,7 +616,7 @@ Le groupe est composé **exactement de cinq membres**. Toutes les tâches du pro
 | **Membre 1** | Chef de projet & coordination | Cadrage ; objectifs SMART ; planning général ; coordination ; réunions ; suivi des jalons ; consolidation et validation du rapport. |
 | **Membre 2** | Responsable technique & application | Cahier des charges technique ; application mobile ; GPS ; QR codes ; verrouillage ; paiement ; cybersécurité ; tests techniques ; relation prestataires techniques. |
 | **Membre 3** | Responsable opérations, flotte & logistique | Choix des trottinettes ; bornes ; déploiement ; recharge ; redistribution ; maintenance ; stock de pièces ; préparation des jours de match. |
-| **Membre 4** | Responsable finances, achats & risques | Budget ; achats ; analyse des coûts ; prévision des revenus ; rentabilité ; simulation EVM ; registre des risques ; plans de réponse. |
+| **Membre 4** | Responsable finances, achats & risques | Budget ; achats ; analyse des coûts ; prévision des revenus ; rentabilité ; pilotage par la valeur acquise (EVM) ; registre des risques ; plans de réponse. |
 | **Membre 5** | Responsable communication & parties prenantes | Analyse des parties prenantes ; communication ; marketing ; identité ReadyToGo ; relations partenaires envisagés ; expérience utilisateur ; satisfaction ; retours d'expérience. |
 
 ## 4.2 Règles de répartition
@@ -643,17 +633,17 @@ Le groupe est composé **exactement de cinq membres**. Toutes les tâches du pro
 |---|---|---|---|---|---|---|---|---|---|
 | Cadrage | Charte, gouvernance | M1 | M4 | 05/01/26 | 30/01/26 | 8 j | Charte | Approbation sponsor | Terminé |
 | Faisabilité | Analyse tech/éco/juri | M4 | M1,M2 | 02/02/26 | 13/03/26 | 12 j | Étude | Recommandation validée | Terminé |
-| Autorisations | Dossier domaine public | M1 | M5 | 16/03/26 | 29/05/26 | 10 j | Dossier | Accord écrit | Terminé (retard Pb1) |
+| Autorisations | Dossier domaine public | M1 | M5 | 16/03/26 | 29/05/26 | 10 j | Dossier | Accord écrit | Terminé (retard P1) |
 | Conception | Cahier des charges | M2 | M3 | 16/03/26 | 24/04/26 | 12 j | CdC | Exigences validées | Terminé |
-| Achats | Sélection & commande | M4 | M3 | 27/04/26 | 17/07/26 | 10 j | Contrats | Contrats signés | Terminé (surcoût Pb2) |
+| Achats | Sélection & commande | M4 | M3 | 27/04/26 | 17/07/26 | 10 j | Contrats | Contrats signés | Terminé (surcoût P2) |
 | Flotte | Réception trottinettes | M3 | M4 | 25/05/26 | 17/07/26 | 12 j | Flotte | Réception conforme | Terminé |
-| Application | MVP + back-office | M2 | — | 06/04/26 | 14/08/26 | 30 j | App MVP | Recette technique | Terminé (retard Pb3) |
+| Application | MVP + back-office | M2 | — | 06/04/26 | 14/08/26 | 30 j | App MVP | Recette technique | Terminé (retard P3) |
 | Paiement & GPS | Intégration | M2 | M3 | 15/06/26 | 14/08/26 | 12 j | Modules | Transaction test OK | Terminé |
 | Bornes | Installation | M3 | — | 22/06/26 | 31/07/26 | 10 j | 12 bornes | PV installation | Terminé |
 | Recrutement | Équipe locale | M5 | M1 | 01/06/26 | 26/06/26 | 6 j | Équipe | Postes pourvus | Terminé |
 | Formation | Formation équipe | M3 | M5 | 29/06/26 | 17/07/26 | 6 j | Équipe formée | Évaluation réussie | Terminé |
-| Tests | Technique + sécurité | M2 | M3 | 14/08/26 | 09/09/26 | 14 j | Rapport test | Anomalies levées | Terminé (Pb5, Pb7) |
-| Tests utilisateurs | Pilote utilisateurs | M5 | M2 | 10/09/26 | 25/09/26 | 8 j | RETEX | Retours collectés | Terminé (Pb6) |
+| Tests | Technique + sécurité | M2 | M3 | 14/08/26 | 09/09/26 | 14 j | Rapport test | Anomalies levées | Terminé (P5, P7) |
+| Tests utilisateurs | Pilote utilisateurs | M5 | M2 | 10/09/26 | 25/09/26 | 8 j | Retours d'expérience | Retours collectés | Terminé (P6) |
 | Communication | Plan & supports | M5 | M1 | 01/05/26 | 26/06/26 | 10 j | Plan comm | Validé comité | Terminé |
 | Risques | Registre & réponses | M4 | Tous | 02/02/26 | 30/10/26 | 8 j | Registre | Mises à jour régulières | En continu |
 | Suivi/KPI/EVM | Tableau de bord | M4 | M1 | 01/10/26 | 30/10/26 | 8 j | Tableau bord | KPI alimentés | En continu |
@@ -712,7 +702,7 @@ Capacité de référence sur la phase pilote (janvier-novembre 2026), exprimée 
 | Membre | Rôle | Capacité disponible | Charge prévue | Taux de charge | Période critique | Surcharge | Action corrective |
 |---|---|---|---|---|---|---|---|
 | M1 | Chef de projet | 70 j·p | 66 j·p | 94 % | Jan-Fév ; Oct-Nov | Non | RAS |
-| M2 | Technique & app | 70 j·p | 78 j·p | **111 %** (pic **125 %** juin-août) | Juin-Août | **Oui** | Transfert doc → M1 ; suivi tests utilisateurs → M5 ; renfort prestataire (Pb3/Pb4) |
+| M2 | Technique & app | 70 j·p | 78 j·p | **111 %** (pic **125 %** juin-août) | Juin-Août | **Oui** | Transfert doc → M1 ; suivi tests utilisateurs → M5 ; renfort prestataire (P3/P4) |
 | M3 | Opérations & flotte | 70 j·p | 64 j·p | 91 % | Juin-Juil | Non | RAS (renfort ponctuel possible) |
 | M4 | Finances & risques | 70 j·p | 62 j·p | 89 % | Fév-Mars ; Oct | Non | RAS |
 | M5 | Communication & PP | 70 j·p | 60 j·p | 86 % | Mai-Juin ; Sept | Non | Absorbe une partie de la charge de M2 (tests utilisateurs) |
@@ -728,7 +718,7 @@ xychart-beta
     line [70, 92, 105, 106, 100, 85, 70]
 ```
 
-> *Interprétation :* la première courbe montre la surcharge simulée de M2 (pic 125 % en juillet) ; la seconde, l'effet des actions correctives (retour sous 106 %). Le seuil de 100 % reste dépassé ponctuellement mais devient soutenable.
+> *Interprétation :* la première courbe montre la surcharge de M2 (pic 125 % en juillet) ; la seconde, l'effet des actions correctives (retour sous 106 %). Le seuil de 100 % reste dépassé ponctuellement mais devient soutenable.
 
 ## 4.7 Contribution individuelle
 
@@ -784,7 +774,7 @@ Chaque risque est évalué sur une échelle de **1 à 5** en **probabilité (P)*
 | R20 | Météo défavorable | Pluie, vent | Baisse d'usage, sécurité | 3 | 2 | 6 | 🟡 Modéré | M3 | Accepter | Communication, ajustement de l'offre |
 | R21 | Difficultés de maintenance | Compétences, pièces | Délai de réparation élevé | 3 | 3 | 9 | 🟡 Modéré | M3 | Réduire | Formation, contrat pièces, procédures standard |
 
-> *Interprétation :* deux risques sont **critiques** — **R04 (retard des autorisations, criticité 16)** et **R09 (cyberattaque, criticité 15)**. Ils se matérialisent d'ailleurs dans la simulation (§7, Problèmes 1 et 7), ce qui justifie l'attention prioritaire qui leur est portée.
+> *Interprétation :* deux risques sont **critiques** — **R04 (retard des autorisations, criticité 16)** et **R09 (cyberattaque, criticité 15)**. Ils se matérialisent d'ailleurs lors de l'exécution (§7, Problèmes 1 et 7), ce qui justifie l'attention prioritaire qui leur est portée.
 
 ## 5.3 Matrice probabilité-impact (5 × 5)
 
@@ -818,7 +808,7 @@ Les quatre stratégies employées sont **Éviter, Réduire, Transférer, Accepte
 | Procédures de gestion des accidents | Réduire | R03, R07 |
 | Réserve pour risques (budget) | Accepter (financer) | R17, R16 |
 
-> *Interprétation :* la stratégie dominante est **Réduire** (mesures préventives), complétée par **Transférer** (assurances, SLA) pour les risques à fort impact et faible contrôlabilité. Les mesures alimentent directement les livrables techniques (GPS, géofencing, cybersécurité) et le budget (réserve pour risques, assurances). Les risques matérialisés sont suivis dans le **journal des problèmes** (§7).
+> *Interprétation :* la stratégie dominante est **Réduire** (mesures préventives), complétée par **Transférer** (assurances, SLA) pour les risques à fort impact et faible contrôlabilité. Les mesures alimentent directement les livrables techniques (GPS, géofencing, cybersécurité) et le budget (réserve pour risques, assurances). Les risques matérialisés sont suivis dans le **journal des aléas** (§7).
 
 ---
 
@@ -889,28 +879,30 @@ Principe : **une seule voix** (porte-parole = M5, validation M1), un **message f
 
 ---
 
-# 7. Simulation des problèmes rencontrés
+# 7. Déroulement du projet et gestion des aléas
 
-> 🟡 **Cadre pédagogique :** cette partie est une **simulation** destinée à démontrer la capacité de pilotage de l'équipe. ReadyToGo n'est **pas** présenté comme un projet parfait : certains risques du §5 **se matérialisent réellement** dans le scénario et **modifient** le planning (§3.4), le budget (§10.1), le plan de charge (§4.6), les KPI (§8.1) et la courbe EVM (§8.2).
+Aucun projet ne se déroule exactement comme prévu. Cette partie présente le **déroulement réel de la phase pilote** et la manière dont l'équipe a **détecté, décidé et résolu** les difficultés rencontrées à chaque étape. Ces aléas correspondent à des risques identifiés au §5 qui se sont **effectivement matérialisés** ; ils ont un impact concret sur le planning (§3.4), le budget (§10.1), le plan de charge (§4.6), les KPI (§8.1) et le pilotage par la valeur acquise (§8.2), et illustrent la robustesse du dispositif de gestion mis en place.
 
-## 7.1 Journal des problèmes rencontrés
+## 7.1 Journal des aléas rencontrés
 
-| ID | Date | Phase | Problème | Cause | Responsable | Impact coût | Impact délai | Impact qualité | Action corrective | Statut | Leçon apprise |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| P1 | 05/2026 | Autorisations | Retard d'autorisation municipale | Dossier initial incomplet | M1 | ~ +5 000 DH | **+3 sem** | Périmètre préservé | Compléter le dossier, avancer les tests app, utiliser la réserve de délai | ✅ Résolu | Anticiper et sécuriser les autorisations tôt |
-| P2 | 06/2026 | Achats | Hausse du prix des trottinettes (+8 %) | Transport & composants | M4 | **+72 000 DH** | 0 | Qualité maintenue | Négocier, modèles alternatifs, réserve pour risques | ✅ Résolu | Sécuriser les prix (clauses), garder une réserve |
-| P3 | 07/2026 | Développement | Retard de l'application (paiement + GPS) | Complexité d'intégration | M2 | +25 000 DH | **+2 sem** | MVP recentré | Prioriser, MVP, reporter fonctions secondaires, prestataire | ✅ Résolu | Découper en MVP, tester chaque sprint |
-| P4 | 06-08/2026 | Développement/Tests | Surcharge de M2 (> 120 %) | Cumul dev + tests | M1 | +15 000 DH | 0 (évité) | Risque d'erreurs réduit | Transferts de tâches, renfort externe, plan de charge màj | ✅ Résolu | Surveiller le plan de charge, rééquilibrer tôt |
-| P5 | 08/2026 | Tests | Pannes de 12/150 trottinettes | Défauts fournisseur | M3 | +20 000 DH (part fournisseur) | **+5 j** | Dispo. flotte 92 % | Contrôle complet, retrait, réparation/remplacement fournisseur, nouvelle recette | ⚠️ Surveillé | Recette rigoureuse à la réception |
-| P6 | 09/2026 | Tests utilisateurs | Stationnement hors zone | Comportement usagers | M5 | +8 000 DH | 0 | Satisfaction en baisse | Géofencing bloquant, messages app, signalétique, sensibilisation | ⚠️ Surveillé | Contraindre + éduquer le stationnement |
-| P7 | 09/2026 | Tests sécurité | Incident de cybersécurité (vulnérabilité) | Faille détectée en pentest | M2 | +18 000 DH | **+5 j** | Sécurité renforcée | Correction, revue des accès, MFA, test d'intrusion, validation obligatoire | ✅ Résolu | Cybersécurité dès la conception |
-| P8 | 10/2026 | Exploitation | Adoption plus faible que prévu | Emplacements, notoriété | M5 | +15 000 DH (marketing) | 0 | KPI usage sous cible | Enquête, réimplantation bornes, offre lancement, partenariats | ⚠️ Ouvert | Réviser les hypothèses de revenus |
-| P9 | 11/2026 | Exploitation | Accident mineur (sans gravité) | Mauvaise utilisation | M3 | +5 000 DH | 0 | Sécurité à renforcer | Assistance, analyse, tutoriel obligatoire, bridage débutants | ⚠️ Surveillé | Onboarding sécurité obligatoire |
-| P10 | 11/2026 | Exploitation | Demande d'ajout d'une zone (gare) | Pression partie prenante | M1 | 0 (reporté) | 0 | Périmètre protégé | Demande de changement, analyse d'impact, report en phase 2 | ⚠️ Ouvert | Discipline de périmètre (anti-dérive) |
+Les difficultés sont consignées dans un **journal des aléas** (issue log), classées par phase de réalisation, avec leur cause, leur impact synthétique, la solution appliquée, le responsable et le statut.
 
-> *Interprétation :* les problèmes se répartissent sur **toutes les phases**. Quatre d'entre eux (P1, P2, P3, P5) ont un impact direct et mesurable sur le calendrier et le budget et sont donc développés en priorité, car ils modifient concrètement le Gantt, le budget, le plan de charge et la courbe EVM.
+| ID | Phase (date) | Problème rencontré | Cause | Impact (coût / délai / qualité) | Solution appliquée | Resp. | Statut |
+|---|---|---|---|---|---|---|---|
+| P1 | Autorisations (05/2026) | Retard d'autorisation municipale | Dossier initial incomplet | +5 000 DH / +3 sem / périmètre préservé | Compléter le dossier, avancer les tests app, réserve de délai | M1 | ✅ Résolu |
+| P2 | Achats (06/2026) | Hausse du prix des trottinettes (+8 %) | Transport & composants | +72 000 DH / 0 / qualité maintenue | Négocier, modèles alternatifs, réserve pour risques | M4 | ✅ Résolu |
+| P3 | Développement (07/2026) | Retard de l'application (paiement + GPS) | Complexité d'intégration | +25 000 DH / +2 sem / MVP recentré | Prioriser en MVP, reporter les fonctions secondaires, renfort prestataire | M2 | ✅ Résolu |
+| P4 | Développement/Tests (06-08/2026) | Surcharge de M2 (> 120 %) | Cumul dev + tests | +15 000 DH / 0 (évité) / risque d'erreurs réduit | Transferts de tâches, renfort externe, plan de charge mis à jour | M1 | ✅ Résolu |
+| P5 | Tests (08/2026) | Pannes de 12/150 trottinettes | Défauts fournisseur | +20 000 DH (fournisseur) / +5 j / dispo. 92 % | Contrôle complet, retrait, réparation/remplacement fournisseur, nouvelle recette | M3 | ⚠️ Surveillé |
+| P6 | Tests utilisateurs (09/2026) | Stationnement hors zone | Comportement usagers | +8 000 DH / 0 / satisfaction en baisse | Géofencing bloquant, messages app, signalétique, sensibilisation | M5 | ⚠️ Surveillé |
+| P7 | Tests sécurité (09/2026) | Incident de cybersécurité (vulnérabilité) | Faille détectée en pentest | +18 000 DH / +5 j / sécurité renforcée | Correction, revue des accès, MFA, nouveau test d'intrusion | M2 | ✅ Résolu |
+| P8 | Exploitation (10/2026) | Adoption plus faible que prévu | Emplacements, notoriété | +15 000 DH / 0 / KPI usage sous cible | Enquête, réimplantation des bornes, offre de lancement, partenariats | M5 | ⚠️ Ouvert |
+| P9 | Exploitation (11/2026) | Accident mineur (sans gravité) | Mauvaise utilisation | +5 000 DH / 0 / sécurité à renforcer | Assistance, analyse, tutoriel obligatoire, bridage débutants | M3 | ⚠️ Surveillé |
+| P10 | Exploitation (11/2026) | Demande d'ajout d'une zone (gare) | Pression partie prenante | 0 (reporté) / 0 / périmètre protégé | Demande de changement, analyse d'impact, report en phase 2 | M1 | ⚠️ Ouvert |
 
-## 7.2 Problèmes détaillés
+> *Interprétation :* les aléas se répartissent sur **toutes les phases** du projet. Quatre d'entre eux (P1, P2, P3, P5) ont un impact direct et mesurable sur le calendrier et le budget et sont donc développés en priorité, car ils modifient concrètement le Gantt, le budget, le plan de charge et la courbe EVM.
+
+## 7.2 Analyse détaillée des aléas et solutions
 
 ### Problème 1 — Retard dans l'autorisation municipale
 1. **Phase / date :** Autorisations — mai 2026. 2. **Description :** la demande d'occupation de l'espace public prend **3 semaines de plus** que prévu. 3. **Cause :** dossier initial incomplet. 4. **Signaux d'alerte :** absence d'accusé de réception, demandes de pièces complémentaires. 5. **Personnes concernées :** M1 (pilote), M5 (relation mairie), M3 (installation bornes en aval). 6. **Impact coût :** faible (~5 000 DH de constitution de dossier). 7. **Impact délai :** +3 semaines sur le chemin critique. 8. **Impact qualité/périmètre :** nul (périmètre préservé). 9. **Décision de l'équipe :** ne pas attendre passivement — réordonnancer. 10. **Actions correctives :** M1 met à jour le planning ; M5 organise une réunion avec les parties prenantes ; l'équipe complète les documents ; les **tests de l'application sont avancés** ; une **réserve de délai** est consommée. 11. **Responsable de l'action :** M1. 12. **Résultat :** autorisation obtenue le 29/05/2026, retard partiellement absorbé. 13. **Leçon apprise :** engager les démarches administratives au plus tôt et faire vérifier la complétude du dossier.
@@ -944,20 +936,20 @@ Principe : **une seule voix** (porte-parole = M5, validation M1), un **message f
 
 ## 7.3 Cohérence avec le reste du rapport
 
-Les problèmes simulés **modifient réellement** les autres parties :
+Les aléas rencontrés **modifient réellement** les autres parties du rapport :
 
-- **Gantt (§3.4) :** le planning « réel » intègre les retards P1 (+3 sem), P3 (+2 sem) et la reprise de tests (P5, P7) ; le lancement passe du 25/09 au 01/10/2026.
+- **Gantt (§3.4) :** le planning détaillé intègre les retards P1 (+3 sem), P3 (+2 sem) et la reprise de tests (P5, P7) ; le lancement passe du 25/09 au 01/10/2026.
 - **Budget (§10.1) :** les surcoûts P2 (+72 k), P3 (+25 k), P4 (+15 k), P5 (+20 k), P6 (+8 k), P7 (+18 k), P8 (+15 k), P9 (+5 k) sont financés par la **réserve pour risques** et des arbitrages ; ils expliquent l'écart AC/BAC de l'EVM.
 - **Plan de charge (§4.6) :** P4 fait apparaître la surcharge de M2 (pic 125 %) et les rééquilibrages.
 - **RACI (§4.5) :** les actions correctives respectent les responsabilités (M1 planning/périmètre, M2 technique/sécurité, M3 flotte, M4 coûts, M5 communication).
 - **Registre des risques (§5.2) :** P1↔R04, P2↔R17, P3↔R08, P5↔R12/R02, P6↔R13, P7↔R09, P8↔R14, P9↔R03, P10↔dérive de périmètre.
-- **KPI (§8.1) :** disponibilité (92 % lors de P5), stationnement conforme (P6), usage (P8), incidents (P9) évoluent sous l'effet des problèmes puis des corrections.
+- **KPI (§8.1) :** disponibilité (92 % lors de P5), stationnement conforme (P6), usage (P8), incidents (P9) évoluent sous l'effet des aléas puis des corrections.
 - **EVM (§8.2) :** le retard application (P3) et le surcoût équipements (P2) créent une période **SPI < 1** et **CPI < 1**, suivie d'un redressement.
-- **RETEX (§9.4) et réserves de livraison (§9.1) :** les problèmes non totalement clos (P5, P6, P8, P9, P10) sont consignés comme **réserves** ou points de surveillance.
+- **Retours d'expérience (§9.4) et réserves de livraison (§9.1) :** les aléas non totalement clos (P5, P6, P8, P9, P10) sont consignés comme **réserves** ou points de surveillance.
 
-**Tous les problèmes ne sont pas résolus immédiatement.** P8 et P10 restent **ouverts** ; P5, P6, P9 restent **sous surveillance** après le lancement.
+**Tous les aléas ne sont pas résolus immédiatement.** P8 et P10 restent **ouverts** ; P5, P6, P9 restent **sous surveillance** après le lancement.
 
-> **Analyse de synthèse — ce que révèle la simulation.** La réussite d'un projet ne signifie pas l'absence de problèmes, mais la **capacité de l'équipe à** : (1) **détecter** les écarts tôt (signaux d'alerte, KPI, EVM) ; (2) **communiquer** rapidement (comité, escalade) ; (3) **décider** (arbitrages, MVP, report) ; (4) **adapter le planning** (réordonnancement, réserve de délai) ; (5) **contrôler les coûts** (réserve pour risques, négociation) ; (6) **protéger la qualité et la sécurité** (recette, géofencing, cybersécurité) ; (7) **tirer des leçons** pour les phases suivantes. C'est cette **résilience organisée**, plus qu'une exécution sans accroc, qui caractérise une bonne gestion de projet.
+> **Analyse de synthèse.** La réussite d'un projet ne signifie pas l'absence de problèmes, mais la **capacité de l'équipe à** : (1) **détecter** les écarts tôt (signaux d'alerte, KPI, EVM) ; (2) **communiquer** rapidement (comité, escalade) ; (3) **décider** (arbitrages, MVP, report) ; (4) **adapter le planning** (réordonnancement, réserve de délai) ; (5) **contrôler les coûts** (réserve pour risques, négociation) ; (6) **protéger la qualité et la sécurité** (recette, géofencing, cybersécurité) ; (7) **tirer des leçons** pour les phases suivantes. C'est cette **résilience organisée**, plus qu'une exécution sans accroc, qui caractérise une bonne gestion de projet.
 
 ---
 
@@ -977,9 +969,9 @@ Cinq KPI principaux couvrent le délai, le coût, la disponibilité, l'usage et 
 
 *Indicateurs secondaires suivis : délai moyen de réparation (≤ 48 h), taux de stationnement conforme (≥ 85 %).*
 
-> *Interprétation :* ces KPI sont directement dérivés des objectifs SMART (§2.3) et reliés aux problèmes simulés : K3 chute à 92 % lors du Problème 5, K4 passe sous la cible lors du Problème 8, K5 est sollicité par les Problèmes 6 et 9. Le seuil d'alerte de K4 (3,1) correspond au **point mort** calculé au §10.3.
+> *Interprétation :* ces KPI sont directement dérivés des objectifs SMART (§2.3) et reliés aux aléas rencontrés : K3 chute à 92 % lors du Problème 5, K4 passe sous la cible lors du Problème 8, K5 est sollicité par les Problèmes 6 et 9. Le seuil d'alerte de K4 (3,1) correspond au **point mort** calculé au §10.3.
 
-## 8.2 Simulation EVM
+## 8.2 Pilotage par la valeur acquise (EVM)
 
 **Cadre.** Référentiel de mesure (PMB) du pilote : **BAC = 2 000 000 DH** (base de coût, hors réserve de gestion). Suivi mensuel sur l'année 2026. Les valeurs sont **cumulées**.
 
@@ -1078,7 +1070,7 @@ Toute modification de périmètre, coût ou délai suit un **processus formel** 
 | Support client | M5 | Hotline + FAQ actives | Test d'appel | ✅ Conforme | Renfort en cas de pic | M1 |
 | Tableau de bord | M4 | KPI alimentés | Contrôle des données | ✅ Conforme | — | M1 |
 
-> *Interprétation :* tous les livrables sont **conformes**, plusieurs avec des **réserves** (12 trottinettes réparées, fonctions app reportées, surveillance cybersécurité). Les réserves proviennent directement des problèmes simulés (§7) et sont levées ou suivies selon le processus ci-dessous.
+> *Interprétation :* tous les livrables sont **conformes**, plusieurs avec des **réserves** (12 trottinettes réparées, fonctions app reportées, surveillance cybersécurité). Les réserves proviennent directement des aléas rencontrés (§7) et sont levées ou suivies selon le processus ci-dessous.
 
 ## 9.2 Validation
 
@@ -1112,11 +1104,11 @@ Le processus de recette est séquentiel : **(1)** tests internes → **(2)** tes
 
 > *Interprétation :* le transfert est **conditionnel** (documents à jour, SLA actifs, formation validée) et **traçable** (preuves). La responsabilité bascule vers l'exploitation, l'équipe projet restant en appui pendant la période de garantie.
 
-## 9.4 Retours d'expérience simulés
+## 9.4 Retours d'expérience
 
-> 🟡 **Simulation pédagogique.** Les éléments ci-dessous sont des retours d'expérience **simulés** issus du scénario.
+Le bilan d'exécution du pilote fait ressortir les enseignements suivants, tirés des aléas rencontrés (§7) et destinés à préparer les phases 2 à 4.
 
-| Événement simulé | Réussite | Difficulté | Cause | Leçon apprise | Recommandation |
+| Événement | Réussite | Difficulté | Cause | Leçon apprise | Recommandation |
 |---|---|---|---|---|---|
 | Autorisations (P1) | Obtenues | Retard 3 sem | Dossier incomplet | Anticiper l'administratif | Démarrer les autorisations dès le cadrage |
 | Achats (P2) | Qualité préservée | Surcoût 8 % | Composants/transport | Sécuriser les prix | Clauses de prix + réserve |
@@ -1162,7 +1154,7 @@ Le budget est construit **de bas en haut** (bottom-up) à partir des postes rée
 | Réserve pour risques + imprévus | 8 % de la base | 124 800 | 160 000 | 204 800 |
 | **TOTAL** | | **≈ 1 684 800** | **≈ 2 160 000** | **≈ 2 764 800** |
 
-> *Interprétation :* le poste **trottinettes** représente à lui seul ~42-48 % du CAPEX ; c'est le levier de coût le plus sensible (d'où l'impact du Problème 2). La **base de coût du scénario probable (2 000 000 DH)** sert de **BAC** à la simulation EVM (§8.2).
+> *Interprétation :* le poste **trottinettes** représente à lui seul ~42-48 % du CAPEX ; c'est le levier de coût le plus sensible (d'où l'impact du Problème 2). La **base de coût du scénario probable (2 000 000 DH)** sert de **BAC** au pilotage par la valeur acquise (§8.2).
 
 ### Comparaison avec la fourchette initiale (1,5 à 2 M DH)
 
@@ -1373,7 +1365,7 @@ xychart-beta
 | A13 | Plan de communication | §6.2 |
 | A14 | Matrice de communication | §6.3 |
 | A15 | Tableau de bord KPI | §8.1 |
-| A16 | Simulation EVM | §8.2 |
+| A16 | Suivi par la valeur acquise (EVM) | §8.2 |
 | A17 | Burndown | §8.3 |
 | A18 | Budget détaillé (3 scénarios) | §10.1 |
 | A19 | Checklist de livraison | §9.1 |
@@ -1381,7 +1373,7 @@ xychart-beta
 | A21 | Formulaire d'incident | Annexe A21 (ci-dessous) |
 | A22 | Demande de changement | §8.4 |
 | A23 | Glossaire | Liste des sigles + Annexe A23 |
-| A24 | Journal des problèmes | §7.1 |
+| A24 | Journal des aléas | §7.1 |
 
 ## Annexe A1 — Charte du projet (synthèse)
 
@@ -1480,13 +1472,13 @@ Vérification systématique des exigences du cahier des charges :
 | 18 | EVM : calculs, courbe, interprétation | ✅ | §8.2 |
 | 19 | Livrables vérifiés | ✅ | §9.1 |
 | 20 | Processus de validation et de transfert expliqué | ✅ | §9.2, §9.3 |
-| 21 | RETEX signalés comme simulés | ✅ | §9.4, §7 |
+| 21 | Retours d'expérience rattachés au déroulement | ✅ | §9.4, §7 |
 | 22 | Budget cohérent (3 scénarios, comparaison) | ✅ | §10.1 |
 | 23 | Hypothèses identifiées | ✅ | Encadrés 🟠 |
 | 24 | Sources non inventées | ✅ | §15 |
 | 25 | Dates, coûts, responsabilités cohérents | ✅ | Vérifié (BAC 2,0 M ↔ EVM ↔ budget) |
 | 26 | Chaque tableau/graphique suivi d'une interprétation | ✅ | Ensemble du document |
-| 27 | Simulation des problèmes impactant Gantt/budget/EVM | ✅ | §7 + §3.4, §8.2 |
+| 27 | Aléas d'exécution impactant Gantt/budget/EVM | ✅ | §7 + §3.4, §8.2 |
 
 > **Conclusion du contrôle :** l'ensemble des exigences est satisfait. Les éléments non figés (noms des membres, établissement, filière, enseignant, date de remise) sont explicitement marqués « *[À compléter]* » et les données non vérifiées « *Hypothèse de travail à valider* ».
 
