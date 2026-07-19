@@ -613,6 +613,215 @@ gantt
 
 > *Interprétation :* les jalons J1-J11 structurent le pilote ; J12-J13 conditionnent l'extension ; J14-J15 préparent 2030. Chaque jalon est un **point de décision** (go/no-go), cohérent avec la gouvernance (§2.7).
 
+---
+
+# 4. Organisation du travail (5 personnes) *(Étape 3)*
+
+Le groupe est composé **exactement de cinq membres**. Toutes les tâches du projet et toutes les parties du rapport sont réparties entre eux, avec une charge équilibrée (contributions proches de 20 % par personne, total 100 %).
+
+## 4.1 Rôles des membres
+
+| Membre | Rôle | Responsabilités principales |
+|---|---|---|
+| **Membre 1** | Chef de projet & coordination | Cadrage ; objectifs SMART ; planning général ; coordination ; réunions ; suivi des jalons ; consolidation et validation du rapport. |
+| **Membre 2** | Responsable technique & application | Cahier des charges technique ; application mobile ; GPS ; QR codes ; verrouillage ; paiement ; cybersécurité ; tests techniques ; relation prestataires techniques. |
+| **Membre 3** | Responsable opérations, flotte & logistique | Choix des trottinettes ; bornes ; déploiement ; recharge ; redistribution ; maintenance ; stock de pièces ; préparation des jours de match. |
+| **Membre 4** | Responsable finances, achats & risques | Budget ; achats ; analyse des coûts ; prévision des revenus ; rentabilité ; simulation EVM ; registre des risques ; plans de réponse. |
+| **Membre 5** | Responsable communication & parties prenantes | Analyse des parties prenantes ; communication ; marketing ; identité ReadyToGo ; relations partenaires envisagés ; expérience utilisateur ; satisfaction ; retours d'expérience. |
+
+## 4.2 Règles de répartition
+
+- La charge est **équilibrée** (≈ 20 % par membre) et tient compte de la **difficulté** et de la **durée** des tâches.
+- Chaque tâche a **un responsable principal unique** ; un membre peut être **en soutien**.
+- Les **prestataires externes** peuvent exécuter certaines actions, mais un membre en assure toujours **le suivi**.
+- Le chef de projet **coordonne** mais ne rédige pas seul la majorité du rapport.
+- Chaque membre produit des **livrables mesurables** ; le total des contributions est égal à **100 %**.
+
+## 4.3 Tableau de répartition des tâches
+
+| Tâche | Sous-tâche | Responsable | Soutien | Début | Fin | Charge estimée | Livrable | Critère de validation | Statut |
+|---|---|---|---|---|---|---|---|---|---|
+| Cadrage | Charte, gouvernance | M1 | M4 | 05/01/26 | 30/01/26 | 8 j | Charte | Approbation sponsor | Terminé |
+| Faisabilité | Analyse tech/éco/juri | M4 | M1,M2 | 02/02/26 | 13/03/26 | 12 j | Étude | Recommandation validée | Terminé |
+| Autorisations | Dossier domaine public | M1 | M5 | 16/03/26 | 29/05/26 | 10 j | Dossier | Accord écrit | Terminé (retard Pb1) |
+| Conception | Cahier des charges | M2 | M3 | 16/03/26 | 24/04/26 | 12 j | CdC | Exigences validées | Terminé |
+| Achats | Sélection & commande | M4 | M3 | 27/04/26 | 17/07/26 | 10 j | Contrats | Contrats signés | Terminé (surcoût Pb2) |
+| Flotte | Réception trottinettes | M3 | M4 | 25/05/26 | 17/07/26 | 12 j | Flotte | Réception conforme | Terminé |
+| Application | MVP + back-office | M2 | — | 06/04/26 | 14/08/26 | 30 j | App MVP | Recette technique | Terminé (retard Pb3) |
+| Paiement & GPS | Intégration | M2 | M3 | 15/06/26 | 14/08/26 | 12 j | Modules | Transaction test OK | Terminé |
+| Bornes | Installation | M3 | — | 22/06/26 | 31/07/26 | 10 j | 12 bornes | PV installation | Terminé |
+| Recrutement | Équipe locale | M5 | M1 | 01/06/26 | 26/06/26 | 6 j | Équipe | Postes pourvus | Terminé |
+| Formation | Formation équipe | M3 | M5 | 29/06/26 | 17/07/26 | 6 j | Équipe formée | Évaluation réussie | Terminé |
+| Tests | Technique + sécurité | M2 | M3 | 14/08/26 | 09/09/26 | 14 j | Rapport test | Anomalies levées | Terminé (Pb5, Pb7) |
+| Tests utilisateurs | Pilote utilisateurs | M5 | M2 | 10/09/26 | 25/09/26 | 8 j | RETEX | Retours collectés | Terminé (Pb6) |
+| Communication | Plan & supports | M5 | M1 | 01/05/26 | 26/06/26 | 10 j | Plan comm | Validé comité | Terminé |
+| Risques | Registre & réponses | M4 | Tous | 02/02/26 | 30/10/26 | 8 j | Registre | Mises à jour régulières | En continu |
+| Suivi/KPI/EVM | Tableau de bord | M4 | M1 | 01/10/26 | 30/10/26 | 8 j | Tableau bord | KPI alimentés | En continu |
+| Lancement | Mise en service | M1 | M3,M2 | 01/10/26 | 01/10/26 | 4 j | Service ouvert | Prérequis réunis | Terminé |
+| Livraison | Recette & transfert | M1 | Tous | 12/10/26 | 30/10/26 | 8 j | PV recette | PV signé | Terminé |
+| Rédaction rapport | Toutes parties | Tous | M1 | 01/02/26 | 05/11/26 | 40 j | Rapport | Relecture croisée | Terminé |
+
+> *Interprétation :* la charge est répartie de sorte qu'aucun membre ne concentre l'essentiel du travail. Le pic de charge de M2 (application + paiement/GPS + tests) est identifié et traité au §4.6 et via le Problème 4 (§7).
+
+## 4.4 Répartition de la rédaction
+
+| Membre | Parties rédigées |
+|---|---|
+| **Membre 1** | Résumé exécutif, introduction, objectifs SMART, planification, coordination, conclusion, harmonisation |
+| **Membre 2** | Solution technique, application, GPS, paiement, cybersécurité, tests, recette technique |
+| **Membre 3** | Flotte, bornes, logistique, maintenance, organisation opérationnelle, transfert vers l'exploitation |
+| **Membre 4** | Budget, modèle économique, risques, KPI financiers, EVM, contrôle des coûts |
+| **Membre 5** | Parties prenantes, communication, marketing, expérience utilisateur, retours d'expérience |
+
+**Processus qualité de rédaction :** relecture croisée (chaque partie relue par un autre membre) → correction collective → réunion finale de validation → vérification du plagiat → harmonisation de la mise en forme (charte graphique, styles de titres, tableaux).
+
+## 4.5 Matrice RACI
+
+*Légende : **R** = Réalise · **A** = Approuve · **C** = Consulté · **I** = Informé. Une seule personne « A » par tâche.*
+
+| Tâche | M1 | M2 | M3 | M4 | M5 |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Définition du projet | **A/R** | C | C | C | C |
+| Étude de faisabilité | C | C | C | **A/R** | I |
+| Objectifs SMART | **A/R** | I | I | C | C |
+| Autorisations | **A/R** | I | I | I | C |
+| Budget | C | I | I | **A/R** | I |
+| Achats | C | I | R | **A** | I |
+| Application | I | **A/R** | I | C | I |
+| Flotte | I | I | **A/R** | C | I |
+| Bornes | C | I | **A/R** | I | I |
+| Sécurité & cybersécurité | I | **A/R** | C | I | I |
+| Risques | C | C | C | **A/R** | C |
+| Communication | C | I | I | I | **A/R** |
+| Tests | I | **A/R** | C | I | C |
+| Formation | I | I | **A/R** | I | C |
+| Lancement | **A** | R | R | I | C |
+| KPI | C | I | I | **A/R** | C |
+| EVM | C | I | I | **A/R** | I |
+| Livraison | **A/R** | C | C | C | C |
+| Rédaction | **A** | R | R | R | R |
+| Relecture | **A** | R | R | R | R |
+| Préparation soutenance | **A** | R | R | R | R |
+
+> *Interprétation :* chaque ligne comporte **exactement un « A »**. Le chef de projet (M1) approuve les tâches transverses (définition, autorisations, lancement, livraison, rédaction) ; les leads de domaine approuvent leurs lots (M2 : application, sécurité, tests ; M3 : flotte, bornes, formation ; M4 : faisabilité, budget, achats, risques, KPI, EVM ; M5 : communication). Cette répartition évite la dilution des responsabilités.
+
+## 4.6 Plan de charge
+
+Capacité de référence sur la phase pilote (janvier-novembre 2026), exprimée en **jours-personne (j·p)** disponibles pour le projet (contexte étudiant, temps partiel). *Hypothèse de travail à valider.*
+
+| Membre | Rôle | Capacité disponible | Charge prévue | Taux de charge | Période critique | Surcharge | Action corrective |
+|---|---|---|---|---|---|---|---|
+| M1 | Chef de projet | 70 j·p | 66 j·p | 94 % | Jan-Fév ; Oct-Nov | Non | RAS |
+| M2 | Technique & app | 70 j·p | 78 j·p | **111 %** (pic **125 %** juin-août) | Juin-Août | **Oui** | Transfert doc → M1 ; suivi tests utilisateurs → M5 ; renfort prestataire (Pb3/Pb4) |
+| M3 | Opérations & flotte | 70 j·p | 64 j·p | 91 % | Juin-Juil | Non | RAS (renfort ponctuel possible) |
+| M4 | Finances & risques | 70 j·p | 62 j·p | 89 % | Fév-Mars ; Oct | Non | RAS |
+| M5 | Communication & PP | 70 j·p | 60 j·p | 86 % | Mai-Juin ; Sept | Non | Absorbe une partie de la charge de M2 (tests utilisateurs) |
+
+**Analyse.** La **période critique** est **juin-août 2026**, où se superposent développement application, intégration paiement/GPS et tests. Le membre **M2 dépasse 100 %** de sa capacité (pic à **125 %**, cf. Problème 4). Les **conflits** proviennent du chevauchement T7-T8-T12. Les **actions de rééquilibrage** consistent à transférer la documentation à M1, le suivi des tests utilisateurs à M5, et à mobiliser un prestataire technique temporaire. Après rééquilibrage, le taux de M2 revient à ≈ 105 % (acceptable ponctuellement).
+
+```mermaid
+xychart-beta
+    title "Taux de charge de M2 par mois (%) — avant/après rééquilibrage"
+    x-axis [Avr, Mai, Juin, Juil, Aout, Sept, Oct]
+    y-axis "Taux de charge (%)" 0 --> 140
+    line [70, 95, 120, 125, 118, 90, 70]
+    line [70, 92, 105, 106, 100, 85, 70]
+```
+
+> *Interprétation :* la première courbe montre la surcharge simulée de M2 (pic 125 % en juillet) ; la seconde, l'effet des actions correctives (retour sous 106 %). Le seuil de 100 % reste dépassé ponctuellement mais devient soutenable.
+
+## 4.7 Contribution individuelle
+
+| Membre | Responsabilités | Parties rédigées | Livrables | Contribution estimée | Validation |
+|---|---|---|---|---|---|
+| M1 | Coordination, cadrage, planning | Résumé, intro, SMART, planif, conclusion | Charte, planning, PV recette, rapport final | **21 %** | Comité |
+| M2 | Technique, application, sécurité | Solution technique, app, tests | App MVP, paiement, GPS, rapport de test | **20 %** | M1 |
+| M3 | Opérations, flotte, logistique | Flotte, bornes, maintenance | Flotte, bornes, dispositif maintenance, formation | **20 %** | M1 |
+| M4 | Finances, achats, risques | Budget, EVM, risques, KPI | Étude faisabilité, budget, registre risques, tableau de bord | **20 %** | M1 |
+| M5 | Communication, parties prenantes | PP, communication, UX, RETEX | Plan de communication, identité, enquêtes satisfaction | **19 %** | M1 |
+| **Total** | | | | **100 %** | |
+
+> *Interprétation :* les contributions sont **proches de 20 %** par personne (écart maximal 2 points), conformément aux règles de répartition. La légère avance de M1 correspond à la charge d'harmonisation finale.
+
+---
+
+# 5. Gestion des risques *(Étape 4)*
+
+## 5.1 Méthode
+
+Chaque risque est évalué sur une échelle de **1 à 5** en **probabilité (P)** et en **impact (I)**. La **criticité = P × I** (de 1 à 25). Les niveaux sont définis ainsi :
+
+| Criticité (P × I) | Niveau | Traitement attendu |
+|---|---|---|
+| 1 – 4 | 🟢 Faible | Accepter / surveiller |
+| 5 – 9 | 🟡 Modéré | Réduire / plan simple |
+| 10 – 14 | 🟠 Élevé | Réduire / transférer, plan formalisé |
+| 15 – 25 | 🔴 Critique | Éviter / réduire en priorité, plan de secours obligatoire |
+
+## 5.2 Registre des risques
+
+| ID | Risque | Cause | Conséquence | P | I | Crit. | Niveau | Propriétaire | Réponse | Plan de secours |
+|---|---|---|---|:--:|:--:|:--:|---|---|---|---|
+| R01 | Vol | Attrait de revente, faible surveillance | Perte d'actifs, coûts | 4 | 3 | 12 | 🟠 Élevé | M3 | Réduire | GPS + verrouillage, alerte immobilisation, dépôt de plainte |
+| R02 | Vandalisme | Dégradation volontaire | Réparations, indisponibilité | 4 | 3 | 12 | 🟠 Élevé | M3 | Réduire/Transférer | Assurance, pièces en stock, zones surveillées |
+| R03 | Accidents | Mauvaise utilisation, voirie | Blessures, image, litige | 3 | 4 | 12 | 🟠 Élevé | M3 | Réduire | Limitation de vitesse, tutoriel, procédure accident |
+| R04 | Retard des autorisations | Dossier incomplet, délais admin. | Décalage installation & lancement | 4 | 4 | 16 | 🔴 Critique | M1 | Éviter/Réduire | Réserve de délai, avancer les tests app, relance mairie |
+| R05 | Réglementation défavorable | Cadre juridique évolutif | Restriction/interdiction zones | 2 | 5 | 10 | 🟠 Élevé | M1 | Réduire | Dialogue mairie, plan de repli géographique |
+| R06 | Batteries à plat | Recharge insuffisante | Trottinettes indisponibles | 3 | 2 | 6 | 🟡 Modéré | M3 | Réduire | Batteries de secours, planning de recharge |
+| R07 | Incident de batterie | Défaut, surchauffe | Sécurité, retrait de lot | 2 | 5 | 10 | 🟠 Élevé | M3 | Éviter/Réduire | Fournisseur certifié, retrait immédiat, procédure incendie |
+| R08 | Panne de l'application | Bug, surcharge serveur | Service interrompu | 3 | 4 | 12 | 🟠 Élevé | M2 | Réduire | Monitoring, sauvegardes, mode dégradé, hotline |
+| R09 | Cyberattaque | Vulnérabilité, exposition | Interruption, atteinte confiance | 3 | 5 | 15 | 🔴 Critique | M2 | Éviter/Réduire | Pentest, MFA, cloisonnement, plan de réponse incident |
+| R10 | Fuite de données | Faille, mauvaise config. | Sanction, perte de confiance | 2 | 5 | 10 | 🟠 Élevé | M2 | Réduire/Transférer | Chiffrement, minimisation, notification, assurance cyber |
+| R11 | Échec du paiement | Panne passerelle | Perte de revenus, friction | 2 | 4 | 8 | 🟡 Modéré | M2 | Réduire/Transférer | Passerelle de secours, SLA prestataire |
+| R12 | Indisponibilité de la flotte | Pannes cumulées | Perte de revenus, insatisfaction | 3 | 4 | 12 | 🟠 Élevé | M3 | Réduire | Maintenance préventive, stock de pièces, redistribution |
+| R13 | Stationnement anarchique | Comportement usagers | Plaintes, image, risque piéton | 4 | 3 | 12 | 🟠 Élevé | M5 | Réduire | Géofencing bloquant, sensibilisation, signalétique |
+| R14 | Faible adoption | Emplacements, prix, notoriété | Revenus < prévisions | 3 | 4 | 12 | 🟠 Élevé | M5 | Réduire | Enquête, offres lancement, partenariats, repositionnement |
+| R15 | Opposition des habitants | Nuisances perçues | Blocage local, image | 3 | 3 | 9 | 🟡 Modéré | M5 | Réduire | Concertation, charte de bon usage, médiation |
+| R16 | Retard fournisseur | Approvisionnement, logistique | Décalage flotte/bornes | 4 | 3 | 12 | 🟠 Élevé | M4 | Réduire/Transférer | Clause SLA, fournisseur alternatif, pénalités |
+| R17 | Hausse des coûts | Composants, transport, change | Dépassement budgétaire | 4 | 3 | 12 | 🟠 Élevé | M4 | Réduire | Réserve pour risques, négociation, révision des postes |
+| R18 | Concurrence | Copie rapide du concept | Pression sur les prix/parts | 3 | 3 | 9 | 🟡 Modéré | M5 | Accepter/Réduire | Différenciation service, contrats partenaires |
+| R19 | Surcharge pendant les matchs | Pics de demande 2030 | Rupture de service | 3 | 4 | 12 | 🟠 Élevé | M3 | Réduire | Renfort équipes, redistribution dédiée, pass événements |
+| R20 | Météo défavorable | Pluie, vent | Baisse d'usage, sécurité | 3 | 2 | 6 | 🟡 Modéré | M3 | Accepter | Communication, ajustement de l'offre |
+| R21 | Difficultés de maintenance | Compétences, pièces | Délai de réparation élevé | 3 | 3 | 9 | 🟡 Modéré | M3 | Réduire | Formation, contrat pièces, procédures standard |
+
+> *Interprétation :* deux risques sont **critiques** — **R04 (retard des autorisations, criticité 16)** et **R09 (cyberattaque, criticité 15)**. Ils se matérialisent d'ailleurs dans la simulation (§7, Problèmes 1 et 7), ce qui justifie l'attention prioritaire qui leur est portée.
+
+## 5.3 Matrice probabilité-impact (5 × 5)
+
+| P ↓ \ I → | **1** | **2** | **3** | **4** | **5** |
+|---|---|---|---|---|---|
+| **5** | | | | | |
+| **4** | | | 🟠 R01, R02, R13, R16, R17 | 🔴 **R04** | |
+| **3** | | 🟡 R06, R20 | 🟡 R15, R18, R21 | 🟠 R03, R08, R12, R14, R19 | 🔴 **R09** |
+| **2** | | | | 🟡 R11 | 🟠 R05, R07, R10 |
+| **1** | | | | | |
+
+> *Interprétation :* la masse des risques se concentre dans la zone **probabilité moyenne-élevée / impact moyen-élevé**, cohérente avec un projet de déploiement physique + numérique. Les deux cases critiques (R04, R09) commandent des plans de secours obligatoires.
+
+## 5.4 Plans de réponse
+
+Les quatre stratégies employées sont **Éviter, Réduire, Transférer, Accepter**. Les mesures transverses ci-dessous couvrent plusieurs risques à la fois :
+
+| Mesure | Stratégie | Risques couverts |
+|---|---|---|
+| GPS + verrouillage électronique | Réduire | R01, R02 |
+| Géofencing (zones autorisées) | Réduire | R13, R15 |
+| Limitation de vitesse / zones à vitesse réduite | Réduire | R03, R19 |
+| Assurance (RC, flotte, cyber) | Transférer | R02, R07, R10, R11 |
+| Maintenance préventive + stock de pièces | Réduire | R06, R12, R21 |
+| Batteries de secours & planning de recharge | Réduire | R06, R12 |
+| Sauvegardes + monitoring | Réduire | R08 |
+| Tests de cybersécurité (pentest, MFA) | Éviter/Réduire | R09, R10 |
+| Contrats avec niveau de service (SLA) | Transférer | R11, R16 |
+| Plan de continuité d'activité | Réduire | R04, R08, R09, R19 |
+| Communication avec la mairie | Réduire | R04, R05, R15 |
+| Procédures de gestion des accidents | Réduire | R03, R07 |
+| Réserve pour risques (budget) | Accepter (financer) | R17, R16 |
+
+> *Interprétation :* la stratégie dominante est **Réduire** (mesures préventives), complétée par **Transférer** (assurances, SLA) pour les risques à fort impact et faible contrôlabilité. Les mesures alimentent directement les livrables techniques (GPS, géofencing, cybersécurité) et le budget (réserve pour risques, assurances). Les risques matérialisés sont suivis dans le **journal des problèmes** (§7).
+
 <!-- END -->
+
+
 
 
