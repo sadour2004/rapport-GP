@@ -1128,7 +1128,200 @@ Le processus de recette est séquentiel : **(1)** tests internes → **(2)** tes
 
 > *Interprétation :* les RETEX confirment que les **quatre problèmes structurants** (autorisations, coûts, application, pannes) sont les plus riches d'enseignements, car ils touchent simultanément délai, coût, qualité et charge. Ces leçons alimentent la préparation des phases 2 à 4.
 
+---
+
+# 10. Analyse économique
+
+## 10.1 Budget détaillé (3 scénarios)
+
+Le budget est construit **de bas en haut** (bottom-up) à partir des postes réels, en trois scénarios : **minimal**, **probable**, **maximal**. Montants en DH.
+
+| Poste | Détail | Minimal | Probable | Maximal |
+|---|---|--:|--:|--:|
+| **CAPEX — Investissement** | | | | |
+| Trottinettes (150) | 5 000 / 6 000 / 7 000 DH l'unité | 750 000 | 900 000 | 1 050 000 |
+| Bornes stationnement/recharge (12) | 15 000 / 20 000 / 25 000 DH | 180 000 | 240 000 | 300 000 |
+| Kits IoT (GPS + SIM + serrure + QR) | 600 / 800 / 1 000 DH × 150 | 90 000 | 120 000 | 150 000 |
+| Application mobile + back-office | Développement | 150 000 | 200 000 | 300 000 |
+| Intégration paiement | Passerelle + certification | 20 000 | 30 000 | 45 000 |
+| Cybersécurité | Audit + pentest initial | 20 000 | 30 000 | 50 000 |
+| Signalétique + habillage | Branding trottinettes/bornes | 15 000 | 25 000 | 40 000 |
+| **Sous-total CAPEX** | | **1 225 000** | **1 545 000** | **1 935 000** |
+| **OPEX — Fonctionnement (6 mois pilote)** | | | | |
+| Équipe locale (6 pers.) | 4 000 / 5 000 / 6 000 DH × 6 × 6 mois | 144 000 | 180 000 | 216 000 |
+| Recharge électrique | 6 mois | 24 000 | 30 000 | 40 000 |
+| Connectivité SIM (data) | 150 cartes × 6 mois | 12 000 | 18 000 | 24 000 |
+| Maintenance + pièces de rechange | 6 mois | 40 000 | 55 000 | 80 000 |
+| Assurances (RC, flotte, cyber) | 6 mois | 30 000 | 40 000 | 55 000 |
+| Autorisations + frais administratifs | Domaine public, juridique | 15 000 | 25 000 | 40 000 |
+| Recrutement + formation | Ponctuel | 12 000 | 20 000 | 30 000 |
+| Marketing + lancement | Campagnes, offres | 50 000 | 75 000 | 120 000 |
+| Support client | Outil + partiel | 8 000 | 12 000 | 20 000 |
+| **Sous-total OPEX** | | **335 000** | **455 000** | **625 000** |
+| **Base de coût (CAPEX + OPEX)** | | **1 560 000** | **2 000 000** | **2 560 000** |
+| Réserve pour risques + imprévus | 8 % de la base | 124 800 | 160 000 | 204 800 |
+| **TOTAL** | | **≈ 1 684 800** | **≈ 2 160 000** | **≈ 2 764 800** |
+
+> *Interprétation :* le poste **trottinettes** représente à lui seul ~42-48 % du CAPEX ; c'est le levier de coût le plus sensible (d'où l'impact du Problème 2). La **base de coût du scénario probable (2 000 000 DH)** sert de **BAC** à la simulation EVM (§8.2).
+
+### Comparaison avec la fourchette initiale (1,5 à 2 M DH)
+
+| Scénario | Total | Position vs 1,5-2 M DH | Écart vs plafond 2 M |
+|---|--:|---|--:|
+| Minimal | ≈ 1,68 M | **Dans la fourchette** | −16 % |
+| Probable | ≈ 2,16 M | **Légèrement au-dessus** | **+8 %** |
+| Maximal | ≈ 2,76 M | **Nettement au-dessus** | +38 % |
+
+> **Explication des écarts.** La fourchette initiale de 1,5-2 M DH correspond, en pratique, au **CAPEX + une exploitation pilote allégée**, sans provision complète pour aléas. Le chiffrage bottom-up ajoute des **OPEX réalistes sur 6 mois** et une **réserve pour risques**, ce qui porte le scénario probable à ~2,16 M DH (+8 % au-dessus du plafond). Pour **rester dans l'enveloppe** de 2 M DH, plusieurs leviers sont possibles : (1) réduire la flotte pilote à ~130 trottinettes ; (2) négocier le prix unitaire (achats groupés, clause de prix) ; (3) étaler le marketing sur la phase 2 ; (4) raccourcir la fenêtre d'OPEX financée à l'avance. Ces arbitrages sont documentés et n'affectent ni la qualité ni la sécurité.
+
+> 🔵 **Décision — Référentiel budgétaire :** retenir le **scénario probable (2,0 M DH de base + 0,16 M de réserve)** comme référence, avec suivi EVM mensuel et seuil d'alerte CPI < 0,90.
+
+## 10.2 Tarification et revenus
+
+**Grille tarifaire envisagée :**
+
+| Formule | Prix | Commentaire |
+|---|--:|---|
+| Déverrouillage | 3 DH | Frais fixe par trajet |
+| Prix à la minute | 1 DH/min | Facturation à l'usage |
+| Trajet moyen (10 min) | ≈ 13 DH | 3 + (10 × 1) |
+| Pass journée | 60 DH | Touristes, jours de match |
+| Pass semaine | 300 DH | Visiteurs 2030 |
+| Abonnement mensuel | 150 DH | Habitants, étudiants |
+
+**Sources de revenus envisagées :** paiement à la minute ; pass journée ; pass semaine ; abonnement mensuel ; publicité sur les trottinettes ; publicité sur les bornes ; sponsoring ; partenariats hôtels (commission sur pass) ; commissions sur les pass ; soutien institutionnel éventuel *(à négocier, non acquis)*.
+
+### Rentabilité de l'abonnement mensuel (150 DH)
+
+Coût variable estimé par trajet (énergie, part de maintenance, redistribution) ≈ **2 DH**. À 150 DH/mois, le point d'équilibre de l'abonnement est **150 ÷ 2 = 75 trajets/mois** (~2,5 trajets/jour). Un usager régulier (2 trajets/jour ouvré ≈ 44/mois) reste rentable ; un usage intensif (4+ trajets/jour) devient déficitaire.
+
+> 🔵 **Décision — Encadrement de l'abonnement :** pour éviter les abus tout en restant attractif, l'abonnement 150 DH inclut **2 trajets/jour de moins de 20 min** ; au-delà, tarif réduit **0,5 DH/min**. Alternatives : formule « éco » 90 DH (1 trajet/jour) et « premium » 220 DH (usage large). Une **durée maximale de 20 min/trajet** et une **politique d'usage raisonnable** encadrent l'offre.
+
+### Analyse du seuil de rentabilité
+
+**Coût mensuel d'exploitation (steady state)** ≈ **113 000 DH** = OPEX récurrent (~70 000 DH/mois) + amortissement CAPEX (~43 000 DH/mois, sur 36 mois). **Revenu moyen mixte par trajet** ≈ **8 DH** (mélange usage/pass/abonnements avec remises).
+
+**Point mort :** 113 000 ÷ (150 trottinettes × 30 jours × 8 DH) = **≈ 3,1 trajets par trottinette et par jour.**
+
+| Scénario de fréquentation | Trajets/trottinette/jour | Revenu mensuel | Coût mensuel | Résultat mensuel |
+|---|:--:|--:|--:|--:|
+| **Faible** | 3,0 | 108 000 DH | 113 000 DH | **−5 000 DH** (déficit) |
+| **Probable** | 5,0 | 180 000 DH | 113 000 DH | **+67 000 DH** |
+| **Élevée** | 8,0 | 288 000 DH | 113 000 DH | **+175 000 DH** |
+
+```mermaid
+xychart-beta
+    title "Seuil de rentabilité — résultat mensuel selon la fréquentation (kDH)"
+    x-axis ["Faible (3/j)", "Probable (5/j)", "Élevée (8/j)"]
+    y-axis "Résultat mensuel (kDH)" -20 --> 200
+    bar [-5, 67, 175]
+```
+
+> **Interprétation :** la rentabilité opérationnelle est atteinte à partir de **~3,1 trajets/trottinette/jour**. Le scénario **faible est légèrement déficitaire**, le **probable** et l'**élevé** dégagent une marge. **Aucune rentabilité n'est promise** : elle dépend de l'adoption réelle — précisément le point mis à l'épreuve par le **Problème 8** (adoption sous cible le premier mois), qui place temporairement le service **au niveau ou sous le point mort** et justifie les actions d'activation de la demande. Le seuil de 3,1 est aussi le **seuil d'alerte du KPI K4** (§8.1).
+
+> 🟠 **Hypothèses de travail à valider :** prix des modes concurrents, revenu moyen par trajet (8 DH), coût variable par trajet (2 DH), durée d'amortissement (36 mois) et fréquentation. À confirmer par relevés terrain et données d'exploitation.
+
+---
+
+# 11. Qualité, sécurité et durabilité
+
+## 11.1 Plan d'assurance qualité
+
+| Domaine | Exigence | Contrôle | Fréquence | Responsable |
+|---|---|---|---|---|
+| Flotte | État mécanique et batterie | Contrôle quotidien + inspection | Quotidienne | M3 |
+| Application | Absence d'anomalie bloquante | Recette + monitoring | Continue | M2 |
+| Sécurité usagers | Limitation de vitesse, tutoriel | Paramétrage + audit | Mensuelle | M3 |
+| Données | Chiffrement, minimisation | Revue de conformité | Trimestrielle | M2 |
+| Stationnement | Zones autorisées respectées | Géofencing + relevés | Continue | M5 |
+| Satisfaction | Note ≥ 4/5 | Enquête in-app | Mensuelle | M5 |
+
+## 11.2 Sécurité et exploitation
+
+- **Maintenance préventive et corrective :** planning d'entretien, stock de pièces, délai de remise en service ≤ 48 h.
+- **Contrôles quotidiens :** freins, pneus, batterie, verrouillage.
+- **Limitation de vitesse** et **zones à vitesse réduite** (centre-ville, corniche fréquentée).
+- **Géofencing** : circulation et stationnement cantonnés aux zones autorisées ; impossibilité de terminer un trajet hors zone.
+- **Stationnement autorisé** matérialisé (bornes, marquage, signalétique).
+- **Procédure en cas d'accident :** assistance, déclaration (formulaire d'incident, annexe), analyse, mesures.
+- **Protection des données & cybersécurité :** chiffrement, MFA, minimisation, pentest avant mise en service (cf. Problème 7), plan de réponse aux incidents.
+- **Accessibilité de l'application :** interface simple, contrastes, parcours guidé.
+- **Signalétique multilingue :** français, arabe, anglais, espagnol (utile pour 2030).
+
+## 11.3 Durabilité — analyse nuancée
+
+> ⚠️ Les trottinettes **ne sont pas automatiquement écologiques**. Leur bénéfice environnemental **dépend de conditions** à vérifier.
+
+| Facteur | Condition d'un bénéfice réel | Levier ReadyToGo |
+|---|---|---|
+| **Report modal** | Remplacer effectivement des trajets en voiture/taxi (et non la marche/vélo) | Cibler les trajets courts motorisés, mesurer via enquêtes |
+| **Durée de vie** | Trottinettes robustes, longue durée d'usage | Modèle « usage intensif », maintenance préventive |
+| **Recharge** | Électricité peu carbonée, recharge optimisée | Recharge nocturne, sobriété, option solaire *(à valider)* |
+| **Maintenance** | Réparabilité, pièces disponibles | Stock de pièces, réparation plutôt que remplacement |
+| **Recyclage des batteries** | Filière de collecte et recyclage | Contrat de reprise fournisseur *(à négocier)* |
+
+> *Interprétation :* le bénéfice environnemental est **potentiel et conditionnel**. ReadyToGo s'engage à **mesurer** le report modal réel et à **maximiser** la durée de vie et le recyclage, sans surestimer l'impact écologique.
+
+---
+
+# 12. Identité de ReadyToGo
+
+- **Couleur principale :** **orange** (#F57C00) — dynamisme, chaleur, visibilité.
+- **Couleur secondaire :** **bleu détroit** (#0B5394) — référence au détroit de Gibraltar, confiance.
+- **Couleurs d'appui :** blanc, gris clair (lisibilité, modernité).
+- **Symbole :** une **roue stylisée associée à un éclair** (mobilité + énergie électrique).
+- **Valeurs :** rapidité, simplicité, sécurité, accessibilité, mobilité responsable.
+
+**Propositions de slogan :**
+
+| # | Slogan | Force | Limite |
+|---|---|---|---|
+| S1 | « ReadyToGo — plus vite que le trafic » | Bénéfice clair (rapidité) | Un peu agressif vis-à-vis des autres modes |
+| S2 | « ReadyToGo — votre trajet court, en un clic » | Simplicité, usage | Moins évocateur de la ville |
+| S3 | « ReadyToGo — Tanger à portée de roue » | Ancrage local + mobilité | Jeu de mots à expliciter |
+
+> 🔵 **Décision — Slogan retenu : S3 « Tanger à portée de roue ».** Il combine **ancrage territorial** (Tanger, atout pour 2030 et l'acceptabilité locale), **promesse de proximité/rapidité** cohérente avec le positionnement « trajets courts », et une **tonalité positive et complémentaire** (et non frontale vis-à-vis des transports publics), contrairement à S1. S2 reste pertinent comme accroche fonctionnelle secondaire dans l'application.
+
+---
+
+# 13. Recommandations
+
+| # | Recommandation | Priorité | Impact | Urgence | Responsable | Échéance |
+|---|---|:--:|:--:|:--:|---|---|
+| R1 | Sécuriser les autorisations dès le cadrage (dossier complet) | Haute | Élevé | Haute | M1 | Avant J3 |
+| R2 | Contractualiser des SLA fournisseurs (prix, délai, qualité) | Haute | Élevé | Haute | M4 | Avant J4 |
+| R3 | Livrer l'application en MVP et itérer par sprints | Haute | Élevé | Moyenne | M2 | Avant J5 |
+| R4 | Activer le géofencing bloquant dès le lancement | Haute | Élevé | Haute | M2/M5 | Avant J10 |
+| R5 | Maintenir une réserve pour risques ≥ 8 % du budget | Haute | Élevé | Moyenne | M4 | Continue |
+| R6 | Suivre l'EVM mensuellement (alerte CPI < 0,90 / SPI < 0,90) | Moyenne | Moyen | Moyenne | M4 | Mensuelle |
+| R7 | Encadrer l'abonnement (usage raisonnable, plafond, durée) | Moyenne | Moyen | Moyenne | M4/M5 | Avant lancement |
+| R8 | Rendre l'onboarding sécurité obligatoire dans l'app | Moyenne | Moyen | Moyenne | M3 | Avant J10 |
+| R9 | Mesurer le report modal réel avant tout argument écologique | Moyenne | Moyen | Basse | M5 | Pilote + 3 mois |
+| R10 | Décider l'extension sur la base des KPI du pilote (J12) | Haute | Élevé | Basse | Sponsor | 31/03/2027 |
+
+> *Interprétation :* les recommandations à **priorité haute** (R1, R2, R3, R4, R5, R10) adressent les causes des problèmes les plus coûteux (autorisations, coûts, application, stationnement, budget) et conditionnent la réussite ainsi que la décision d'extension.
+
+---
+
+# 14. Conclusion générale
+
+**Réponse à la problématique.** Un service de trottinettes électriques en libre-service **peut être planifié, organisé et piloté** à Tanger de façon rigoureuse : ce rapport en a décliné les sept étapes, du cadrage à la livraison, avec des outils de gestion de projet cohérents et chiffrés.
+
+**Faisabilité.** ReadyToGo est **faisable sous conditions**. Techniquement, la solution (flotte + bornes + application + IoT) est maîtrisable via une méthode hybride. Économiquement, le budget réaliste (≈ 2,16 M DH) dépasse légèrement l'enveloppe initiale mais reste maîtrisable avec des arbitrages ; la rentabilité opérationnelle est atteignable **au-delà de ~3,1 trajets/trottinette/jour**, sans garantie — elle **dépend de l'adoption**.
+
+**Avantages.** Gain de temps sur les trajets courts, complémentarité avec les transports publics, atout pour l'accueil des visiteurs de 2030, montée en charge progressive et maîtrisée.
+
+**Limites.** Dépendance aux autorisations et aux fournisseurs, sensibilité à l'adoption, enjeux de sécurité et d'acceptabilité (stationnement), bénéfice environnemental conditionnel.
+
+**Conditions de réussite.** Obtenir les autorisations tôt, sécuriser les coûts, livrer un MVP fiable, contraindre le stationnement (géofencing), intégrer la cybersécurité dès la conception, et piloter par KPI/EVM avec une réserve suffisante.
+
+**Prochaines décisions.** Évaluation du pilote (J12, mars 2027) puis **go/no-go de l'extension** (J13). En cas de succès, déploiement progressif jusqu'au dispositif renforcé de **2030**.
+
+**Ouverture.** Au-delà de l'événement 2030, ReadyToGo peut s'inscrire durablement dans l'écosystème de mobilité de Tanger, à condition de démontrer, données à l'appui, son utilité, sa soutenabilité et son bénéfice environnemental réel. La leçon centrale de ce projet reste que **la réussite ne tient pas à l'absence de problèmes, mais à la capacité de l'équipe à les détecter, décider et corriger**.
+
 <!-- END -->
+
+
 
 
 
