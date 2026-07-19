@@ -959,7 +959,178 @@ Les problèmes simulés **modifient réellement** les autres parties :
 
 > **Analyse de synthèse — ce que révèle la simulation.** La réussite d'un projet ne signifie pas l'absence de problèmes, mais la **capacité de l'équipe à** : (1) **détecter** les écarts tôt (signaux d'alerte, KPI, EVM) ; (2) **communiquer** rapidement (comité, escalade) ; (3) **décider** (arbitrages, MVP, report) ; (4) **adapter le planning** (réordonnancement, réserve de délai) ; (5) **contrôler les coûts** (réserve pour risques, négociation) ; (6) **protéger la qualité et la sécurité** (recette, géofencing, cybersécurité) ; (7) **tirer des leçons** pour les phases suivantes. C'est cette **résilience organisée**, plus qu'une exécution sans accroc, qui caractérise une bonne gestion de projet.
 
+---
+
+# 8. Suivi et indicateurs *(Étape 6)*
+
+## 8.1 KPI
+
+Cinq KPI principaux couvrent le délai, le coût, la disponibilité, l'usage et la satisfaction/sécurité.
+
+| KPI | Définition | Formule | Source | Fréquence | Responsable | Cible | Seuil d'alerte | Action corrective |
+|---|---|---|---|---|---|---|---|---|
+| **K1 — Respect du délai** | Part des jalons tenus | (Jalons à l'heure ÷ jalons prévus) × 100 | Planning | Mensuelle | M1 | ≥ 90 % | < 80 % | Réordonnancer, réserve de délai |
+| **K2 — Respect du budget** | Performance des coûts | CPI = EV ÷ AC | Suivi budgétaire | Mensuelle | M4 | ≥ 0,95 | < 0,90 | Négocier, réserve, arbitrages |
+| **K3 — Disponibilité de la flotte** | Part de la flotte en service | (Trottinettes dispo ÷ flotte totale) × 100 | Back-office | Quotidienne | M3 | ≥ 90 % | < 85 % | Maintenance, redistribution |
+| **K4 — Usage** | Trajets par trottinette et par jour | Trajets ÷ (flotte × jours) | Application | Quotidienne | M5 | ≥ 5 | < 3,1 (point mort) | Offres, réimplantation, marketing |
+| **K5 — Satisfaction / sécurité** | Note moyenne & incidents | Note in-app ; incidents / 1 000 trajets | Enquête / registre | Mensuelle | ≥ 4/5 ; ≤ 1,5 | < 3,5 ; > 2,5 | Tutoriel, bridage, corrections |
+
+*Indicateurs secondaires suivis : délai moyen de réparation (≤ 48 h), taux de stationnement conforme (≥ 85 %).*
+
+> *Interprétation :* ces KPI sont directement dérivés des objectifs SMART (§2.3) et reliés aux problèmes simulés : K3 chute à 92 % lors du Problème 5, K4 passe sous la cible lors du Problème 8, K5 est sollicité par les Problèmes 6 et 9. Le seuil d'alerte de K4 (3,1) correspond au **point mort** calculé au §10.3.
+
+## 8.2 Simulation EVM
+
+**Cadre.** Référentiel de mesure (PMB) du pilote : **BAC = 2 000 000 DH** (base de coût, hors réserve de gestion). Suivi mensuel sur l'année 2026. Les valeurs sont **cumulées**.
+
+**Formules.** SV = EV − PV · CV = EV − AC · SPI = EV ÷ PV · CPI = EV ÷ AC · EAC = BAC ÷ CPI · ETC = EAC − AC · VAC = BAC − EAC.
+
+| Mois (2026) | PV (DH) | EV (DH) | AC (DH) | SV (DH) | CV (DH) | SPI | CPI |
+|---|--:|--:|--:|--:|--:|:--:|:--:|
+| Jan | 60 000 | 55 000 | 60 000 | −5 000 | −5 000 | 0,92 | 0,92 |
+| Fév | 150 000 | 130 000 | 140 000 | −20 000 | −10 000 | 0,87 | 0,93 |
+| Mar | 300 000 | 250 000 | 270 000 | −50 000 | −20 000 | 0,83 | 0,93 |
+| Avr | 500 000 | 420 000 | 460 000 | −80 000 | −40 000 | 0,84 | 0,91 |
+| Mai | 800 000 | 700 000 | 780 000 | −100 000 | −80 000 | 0,88 | 0,90 |
+| **Juin** | 1 150 000 | 980 000 | 1 080 000 | **−170 000** | **−100 000** | **0,85** | **0,91** |
+| Juil | 1 450 000 | 1 250 000 | 1 380 000 | −200 000 | −130 000 | 0,86 | 0,91 |
+| Aoû | 1 700 000 | 1 520 000 | 1 650 000 | −180 000 | −130 000 | 0,89 | 0,92 |
+| Sep | 1 850 000 | 1 700 000 | 1 840 000 | −150 000 | −140 000 | 0,92 | 0,92 |
+| Oct | 1 940 000 | 1 850 000 | 1 990 000 | −90 000 | −140 000 | 0,95 | 0,93 |
+| Nov | 1 990 000 | 1 950 000 | 2 080 000 | −40 000 | −130 000 | 0,98 | 0,94 |
+| **Déc** | 2 000 000 | 2 000 000 | 2 130 000 | **0** | **−130 000** | **1,00** | **0,94** |
+
+**Prévisions au point de contrôle de juin (situation la plus dégradée) :**
+- EAC = BAC ÷ CPI = 2 000 000 ÷ 0,907 ≈ **2 204 000 DH**
+- ETC = EAC − AC = 2 204 000 − 1 080 000 ≈ **1 124 000 DH**
+- VAC = BAC − EAC = 2 000 000 − 2 204 000 ≈ **−204 000 DH** (dépassement prévu)
+
+**Situation finale (décembre) :** EAC réel = AC = **2 130 000 DH** ; **VAC = −130 000 DH**. Le dépassement final (~6,5 %) est **inférieur** à la prévision de juin (−204 000 DH), grâce aux actions correctives, et **absorbé par la réserve pour risques**.
+
+### Courbe PV / EV / AC
+
+```mermaid
+xychart-beta
+    title "Courbe EVM ReadyToGo — PV, EV, AC (cumulés, kDH) — 2026"
+    x-axis [Jan, Fev, Mar, Avr, Mai, Juin, Juil, Aou, Sep, Oct, Nov, Dec]
+    y-axis "Montant cumulé (kDH)" 0 --> 2200
+    line [60, 150, 300, 500, 800, 1150, 1450, 1700, 1850, 1940, 1990, 2000]
+    line [55, 130, 250, 420, 700, 980, 1250, 1520, 1700, 1850, 1950, 2000]
+    line [60, 140, 270, 460, 780, 1080, 1380, 1650, 1840, 1990, 2080, 2130]
+```
+
+> **Lecture de la courbe :** la ligne du haut en fin de période est **AC** (coût réel, qui dépasse), la ligne médiane **PV** (planifié), la ligne **EV** (valeur acquise) reste sous PV jusqu'en fin d'année. EV < PV ⇒ **retard** ; EV < AC ⇒ **surcoût**.
+
+> **Interprétation & actions correctives.**
+> - **Mars-juillet (dégradation) :** **SPI tombe à 0,83-0,86** et **CPI à 0,90-0,91**. Causes : retard d'autorisation (P1), retard application (P3), hausse du prix des trottinettes (P2), pannes en test (P5), incident cyber (P7). Le point de contrôle de **juin** est le plus critique (SV = −170 000, CV = −100 000) et prévoit un dépassement (EAC 2,20 M > BAC).
+> - **Décision (juin-juillet) :** livrer un **MVP** (P3), **négocier/arbitrer** les coûts (P2), **rééquilibrer la charge** (P4), **mobiliser la réserve pour risques**.
+> - **Août-décembre (redressement) :** **SPI remonte de 0,89 à 1,00** (calendrier rattrapé) ; **CPI se stabilise à 0,94** (le surcoût ~130 000 DH subsiste mais est maîtrisé). Le projet **finit dans les délais** avec un **dépassement de coût de 6,5 %**, financé par la réserve.
+>
+> Cette trajectoire illustre une **période SPI < 1 et CPI < 1** suivie de l'**effet des mesures correctives** — exactement le comportement attendu d'un pilotage EVM efficace.
+
+## 8.3 Burndown (application mobile)
+
+Backlog initial : **120 points**, 8 sprints de 2 semaines. La courbe réelle reste **au-dessus** de l'idéale (retard P3) ; un **recentrage MVP** solde les 8 derniers points en reportant des fonctions secondaires à la phase 2.
+
+```mermaid
+xychart-beta
+    title "Burndown application ReadyToGo — points restants"
+    x-axis [S0, S1, S2, S3, S4, S5, S6, S7, S8]
+    y-axis "Points restants" 0 --> 120
+    line [120, 105, 90, 75, 60, 45, 30, 15, 0]
+    line [120, 112, 100, 90, 82, 70, 52, 28, 8]
+```
+
+> **Interprétation :** la ligne droite est le **travail idéal restant** ; la ligne au-dessus est le **travail réel restant**. L'écart se creuse aux sprints S2-S6 (intégration paiement/GPS, Problème 3), puis se résorbe. Les **8 points résiduels** en S8 correspondent aux fonctions secondaires **reportées** (décision MVP), assumée et tracée.
+
+## 8.4 Gestion des changements
+
+Toute modification de périmètre, coût ou délai suit un **processus formel** : demande → analyse d'impact → décision du comité → mise à jour des référentiels.
+
+**Modèle de demande de changement (exemple : Problème 10) :**
+
+| Référence | Demandeur | Changement | Justification | Impact coût | Impact délai | Impact qualité | Décision | Approbateur |
+|---|---|---|---|---|---|---|---|---|
+| DC-001 | Partie prenante | Ajouter une zone près de la gare | Demande de desserte | + ~150 000 DH (bornes + trottinettes) | +4-6 sem | Risque de dérive du périmètre | **Reporté en phase 2** | Comité de pilotage |
+| DC-002 | M2 | Recentrer l'app sur un MVP | Retard d'intégration (P3) | +25 000 DH (prestataire) | Neutralise le retard | Fonctions secondaires reportées | **Approuvé** | M1 |
+| DC-003 | M4 | Mobiliser la réserve pour risques | Surcoût trottinettes (P2) | +72 000 DH (réserve) | 0 | Qualité préservée | **Approuvé** | Comité de pilotage |
+
+> *Interprétation :* le processus protège le projet de la **dérive de périmètre** (DC-001 reporté) tout en autorisant les adaptations utiles (DC-002, DC-003). Chaque décision est tracée et répercutée sur le planning, le budget et l'EVM.
+
+---
+
+# 9. Livraison du projet *(Étape 7)*
+
+## 9.1 Vérification des livrables
+
+| Livrable | Responsable | Critère d'acceptation | Méthode de vérification | Résultat | Réserve | Validateur |
+|---|---|---|---|---|---|---|
+| Trottinettes (flotte) | M3 | Conformité, disponibilité ≥ 90 % | Contrôle échantillon + back-office | ✅ Conforme | Suivi 12 unités réparées (P5) | M4 |
+| Bornes | M3 | 12 opérationnelles | PV d'installation | ✅ Conforme | — | M1 |
+| Application | M2 | Parcours complet fonctionnel | Recette technique | ✅ Conforme (MVP) | Fonctions secondaires en phase 2 (P3) | M1 |
+| GPS & verrouillage | M2 | Localisation + verrouillage OK | Tests terrain | ✅ Conforme | — | M3 |
+| Paiement | M2 | Transaction test réussie | Test de bout en bout | ✅ Conforme | — | M4 |
+| Sécurité (cyber) | M2 | Pentest sans faille bloquante | Test d'intrusion | ✅ Conforme après correction (P7) | Surveillance continue | M1 |
+| Protection des données | M2 | Chiffrement + minimisation | Revue de conformité | ✅ Conforme | — | M1 |
+| Formation | M3 | Évaluation réussie | Grille d'évaluation | ✅ Conforme | — | M1 |
+| Maintenance | M3 | Procédures testées, stock pièces | Simulation d'intervention | ✅ Conforme | — | M1 |
+| Documentation | M2 | Complète et à jour | Revue documentaire | ✅ Conforme | Mise à jour continue | M1 |
+| Support client | M5 | Hotline + FAQ actives | Test d'appel | ✅ Conforme | Renfort en cas de pic | M1 |
+| Tableau de bord | M4 | KPI alimentés | Contrôle des données | ✅ Conforme | — | M1 |
+
+> *Interprétation :* tous les livrables sont **conformes**, plusieurs avec des **réserves** (12 trottinettes réparées, fonctions app reportées, surveillance cybersécurité). Les réserves proviennent directement des problèmes simulés (§7) et sont levées ou suivies selon le processus ci-dessous.
+
+## 9.2 Validation
+
+Le processus de recette est séquentiel : **(1)** tests internes → **(2)** tests techniques → **(3)** tests de sécurité → **(4)** tests utilisateurs → **(5)** correction des anomalies → **(6)** **recette provisoire** (avec réserves) → **(7)** levée des réserves → **(8)** **recette définitive** → **(9)** signature du procès-verbal.
+
+**Modèle de procès-verbal de recette (extrait) :**
+
+> **PROCÈS-VERBAL DE RECETTE — ReadyToGo (pilote)**
+> - **Objet :** réception du service pilote (flotte, bornes, application, paiement, GPS, sécurité).
+> - **Date :** 30/10/2026 · **Lieu :** Tanger.
+> - **Participants :** chef de projet (M1), responsables M2-M5, sponsor.
+> - **Type de recette :** ☐ provisoire ☒ définitive.
+> - **Réserves :** R1 — surveillance des 12 unités réparées (P5) ; R2 — fonctions app secondaires reportées en phase 2 (P3) ; R3 — surveillance cybersécurité continue (P7).
+> - **Décision :** ☒ Accepté avec réserves à lever avant le 30/11/2026.
+> - **Signatures :** Sponsor _______ · Chef de projet _______ · Responsables _______.
+
+> *Interprétation :* la **recette avec réserves** est la situation réaliste d'un projet ayant rencontré des aléas : le service est mis en exploitation, mais des points restent sous surveillance avec une échéance de levée.
+
+## 9.3 Transfert vers l'exploitation
+
+| Élément transféré | Émetteur | Destinataire | Date | Condition | Preuve | Statut |
+|---|---|---|---|---|---|---|
+| Documents & procédures | M2/M3 | Exploitation | 30/10/2026 | À jour | Dépôt documentaire | ✅ Transféré |
+| Accès (systèmes, back-office) | M2 | Exploitation | 30/10/2026 | Droits restreints | Journal des accès | ✅ Transféré |
+| Formation | M3 | Équipe locale | 17/07/2026 | Évaluation réussie | Attestations | ✅ Transféré |
+| Maintenance | M3 | Équipe maintenance | 30/10/2026 | Procédures testées | Fiches d'intervention | ✅ Transféré |
+| Stock de pièces | M3 | Exploitation | 30/10/2026 | Inventaire validé | Bon d'inventaire | ✅ Transféré |
+| Contrats (fournisseurs, paiement) | M4 | Exploitation | 30/10/2026 | SLA actifs | Contrats signés | ✅ Transféré |
+| Assistance après lancement | M5 | Support client | 01/10/2026 | Hotline active | Journal support | ✅ Transféré |
+| Responsabilités après transfert | M1 | Exploitation | 30/10/2026 | RACI d'exploitation | RACI signé | ✅ Transféré |
+
+> *Interprétation :* le transfert est **conditionnel** (documents à jour, SLA actifs, formation validée) et **traçable** (preuves). La responsabilité bascule vers l'exploitation, l'équipe projet restant en appui pendant la période de garantie.
+
+## 9.4 Retours d'expérience simulés
+
+> 🟡 **Simulation pédagogique.** Les éléments ci-dessous sont des retours d'expérience **simulés** issus du scénario.
+
+| Événement simulé | Réussite | Difficulté | Cause | Leçon apprise | Recommandation |
+|---|---|---|---|---|---|
+| Autorisations (P1) | Obtenues | Retard 3 sem | Dossier incomplet | Anticiper l'administratif | Démarrer les autorisations dès le cadrage |
+| Achats (P2) | Qualité préservée | Surcoût 8 % | Composants/transport | Sécuriser les prix | Clauses de prix + réserve |
+| Application (P3) | MVP livré | Retard 2 sem | Complexité intégration | Découper en MVP | Tester à chaque sprint |
+| Tests flotte (P5) | Défauts détectés | Dispo. 92 % | Défauts fournisseur | Recette stricte | SLA & recette à la réception |
+| Stationnement (P6) | Corrigé | Plaintes riverains | Comportement | Contraindre + éduquer | Géofencing dès le lancement |
+| Cybersécurité (P7) | Faille corrigée | Lancement décalé | Vulnérabilité | *Security by design* | Pentest avant mise en service |
+| Adoption (P8) | Progression | Sous cible | Emplacements/notoriété | Ne pas surestimer l'usage | Renforcer les équipes aux pics, activer la demande |
+
+> *Interprétation :* les RETEX confirment que les **quatre problèmes structurants** (autorisations, coûts, application, pannes) sont les plus riches d'enseignements, car ils touchent simultanément délai, coût, qualité et charge. Ces leçons alimentent la préparation des phases 2 à 4.
+
 <!-- END -->
+
+
 
 
 
